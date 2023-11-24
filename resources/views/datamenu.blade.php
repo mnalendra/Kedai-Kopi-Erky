@@ -12,7 +12,7 @@
         <title>Data Menu</title>
     </head>
     <body>
-        <h1 class="text-center mb-4">Data Menu</h1>
+        <h1 class="text-center mb-4">HI ALE</h1>
         <div class="container">
             <button type="button" class="btn btn-primary">Tambah</button>
             <div class="row">
