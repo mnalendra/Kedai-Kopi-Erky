@@ -18,5 +18,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/menu', [MenuController::class, 'index'])->name('menu');
-Route::get('/tambahmenu', [MenuController::class, 'tambahmenu'])->name('tambahmenu');
+Route::get('/datamenu', [MenuController::class, 'index'])->name('datamenu');
+Route::post('/tambahmenu', [MenuController::class, 'tambahmenu'])->name('tambahmenu');
