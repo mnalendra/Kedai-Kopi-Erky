@@ -19,4 +19,6 @@ Route::get('/', function () {
 });
 
 Route::get('/datamenu', [MenuController::class, 'index'])->name('datamenu');
-Route::post('/tambahmenu', [MenuController::class, 'tambahmenu'])->name('tambahmenu');
+
+Route::get('/tambahmenu', [MenuController::class, 'tambahmenu'])->name('tambahmenu');
+Route::post('/insertdata', [MenuController::class, 'insertdata'])->name('insertdata');

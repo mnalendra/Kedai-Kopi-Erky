@@ -11,22 +11,32 @@
 <body>
     <h1 class="text-center mb-4">Data Menu</h1>
     <div class="container">
-        <button type="button" class="btn btn-primary">Tambah</button>
+        <a href="/tambahmenu" class="btn btn-primary">Tambah</a>
         <div class="row">
+            @if ($message = Session::get('succcess'))
+            <div class="alert alert-primary" role="alert">
+                {{$message}}
+            </div>
+            @endif
             <table class="table">
                 <thead>
                     <tr>
                         <th scope="col">No</th>
                         <th scope="col">Nama</th>
                         <th scope="col">Harga</th>
+                        <th scope="col">Tanggal Dibuat</th>
+                        <th scope="col">Terakhir Diubah</th>
                         <th scope="col">Aksi</th>
                     </tr>
                 </thead>
                 <tbody>
+                    @foreach ($data as $row)
                     <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
+                        <th scope="row">{{$row ->id}}</th>
+                        <td>{{$row ->nama}}</td>
+                        <td>{{$row ->harga}}</td>
+                        <td>{{$row ->created_at}}</td>
+                        <td>{{$row ->updated_at}}</td>
                         <td>
                             <button type="button" class="btn btn-danger">
                                 Hapus
@@ -36,6 +46,7 @@
                             </button>
                         </td>
                     </tr>
+                    @endforeach
                 </tbody>
             </table>
         </div>
