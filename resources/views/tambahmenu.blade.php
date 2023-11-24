@@ -11,11 +11,22 @@
 <body>
     <h1 class="text-center mb-4">Tambah Data Menu</h1>
     <div class="container">
-        <button type="button" class="btn btn-primary">Tambah</button>
         <div class="row">
             <div class="card">
                 <div class="card-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Nama Menu</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
 
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Harga</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+                        </div>
+                        <button type="submit" class="btn btn-primary">Tambah</button>
+                    </form>
                 </div>
             </div>
         </div>
