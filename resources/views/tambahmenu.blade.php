@@ -13,7 +13,11 @@
     <div class="container">
         <button type="button" class="btn btn-primary">Tambah</button>
         <div class="row">
+            <div class="card">
+                <div class="card-body">
 
+                </div>
+            </div>
         </div>
     </div>
 </body>
