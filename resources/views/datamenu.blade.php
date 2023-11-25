@@ -11,11 +11,11 @@
 <body>
     <h1 class="text-center mb-4">Data Menu</h1>
     <div class="container">
-        <a href="/tambahmenu" class="btn btn-primary">Tambah</a>
+        <a href="/tambahmenu" class="btn btn-primary">Tambah +</a>
         <div class="row">
-            @if ($message = Session::get('succcess'))
+            @if ($pesan = Session::get('sukses'))
             <div class="alert alert-primary" role="alert">
-                {{$message}}
+                { pesan}
             </div>
             @endif
             <table class="table">
@@ -38,12 +38,12 @@
                         <td>{{$row ->created_at}}</td>
                         <td>{{$row ->updated_at}}</td>
                         <td>
-                            <button type="button" class="btn btn-danger">
+                            <a href="/deletemenu/ {{$row ->id}} " type="button" class="btn btn-danger">
                                 Hapus
-                            </button>
-                            <button type="button" class="btn btn-info">
+                            </a>
+                            <a href="/editmenu/ {{$row ->id}} " class="btn btn-info">
                                 Edit
-                            </button>
+                            </a>
                         </td>
                     </tr>
                     @endforeach

@@ -20,5 +20,14 @@ Route::get('/', function () {
 
 Route::get('/datamenu', [MenuController::class, 'index'])->name('datamenu');
 
+// Untuk Tambah Data Menu
 Route::get('/tambahmenu', [MenuController::class, 'tambahmenu'])->name('tambahmenu');
 Route::post('/insertdata', [MenuController::class, 'insertdata'])->name('insertdata');
+
+// Untuk Edit Data Menu
+Route::get('/editmenu/{id}', [MenuController::class, 'editmenu'])->name('editmenu');
+Route::post('/updatedata/{id}', [MenuController::class, 'updatedata'])->name('updatedata');
+
+// Delete
+Route::get('/deletemenu/{id}', [MenuController::class, 'deletemenu'])->name('deletemenu');
+// Route::post('/updatedata/{id}', [MenuController::class, 'updatedata'])->name('updatedata');
