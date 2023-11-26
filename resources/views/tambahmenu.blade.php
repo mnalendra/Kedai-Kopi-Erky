@@ -14,17 +14,27 @@
         <div class="row">
             <div class="card">
                 <div class="card-body">
-                    <form action="/insertdata" method="post">
+                    <form action="/insertdata" method="post" enctype="multipart/form-data">
                         @csrf
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Nama Menu</label>
                             <input type="text" name="nama" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Kategori</label>
+                            <select type="text" name="kategori" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <option selected="">Pilih Kategori</option>
+                                <option value="kopi">Kopi</option>
+                                <option value="makanan ringan">Makanan Ringan</option>
+                                <option value="minuman">Minuman</option>
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Harga</label>
                             <input type="text" name="harga" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Masukkan Foto</label>
+                            <input type="file" name="foto" class="form-control">
                         </div>
                         <button type="submit" class="btn btn-primary">Tambah</button>
                     </form>

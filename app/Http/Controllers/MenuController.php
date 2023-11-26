@@ -23,7 +23,12 @@ class MenuController extends Controller
     public function insertdata(Request $request)
     {
         // dd($request->all());
-        Menu::create($request->all());
+        $data = Menu::create($request->all());
+        if ($request->hasFile('foto')) {
+            $request->file('foto')->move('fotomenu/', $request->file('foto')->getClientOriginalName());
+            $data->foto = $request->file('foto')->getClientOriginalName();
+            $data->save();
+        }
         return redirect()->route('datamenu')->with('sukses', 'Data berhasil ditambahkan!');
     }
 
