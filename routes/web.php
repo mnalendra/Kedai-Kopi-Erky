@@ -31,3 +31,7 @@ Route::post('/updatedata/{id}', [MenuController::class, 'updatedata'])->name('up
 // Delete
 Route::get('/deletemenu/{id}', [MenuController::class, 'deletemenu'])->name('deletemenu');
 // Route::post('/updatedata/{id}', [MenuController::class, 'updatedata'])->name('updatedata');
+
+Route::get('/Home', function () {
+    return view('home');
+});
