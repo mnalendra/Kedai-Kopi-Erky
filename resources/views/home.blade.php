@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <div>
+  <div class="fixed-top">
     <nav id="navbar-example1" class="navbar bg-body-tertiary px-3 mb-3">
       <a style="padding-left: 5%;" class="navbar-brand" href="#">Kedai Kopi Erky</a>
       <ul class="nav nav-pills" style="padding-right: 10%;">
@@ -21,7 +21,7 @@
           <a class="nav-link" href="#scrollspyHeading1">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#scrollspyHeading2">About</a>
+          <a class="nav-link" href="#about">About</a>
         </li>
         <li class="nav-item item">
           <a class="nav-link " href="#">Menu</a>
@@ -47,6 +47,19 @@
       </div>
     </div>
   </section>
+
+  
+  <main>
+    <section>
+      <div class="container">
+        <div class="section-title">
+          <h2 id="about">Kedai Kopi Erky</h2>
+          <p>Berdiri sejak tahun 2020 </p>
+          
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 
 </html>
