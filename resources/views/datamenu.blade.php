@@ -18,7 +18,7 @@
             <a href="/tambahmenu" class="btn btn-primary">Tambah +</a>
             <div class="row">
                 @if ($pesan = Session::get('sukses'))
-                <div class="alert alert-primary" role="alert">{ pesan}</div>
+                <div class="alert alert-primary" role="alert">{pesan}</div>
                 @endif
                 <table class="table">
                     <thead>
