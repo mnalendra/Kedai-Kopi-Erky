@@ -21,19 +21,19 @@
                             <input type="text" name="nama" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                         </div>
                         <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Kategori</label>
-                            <select type="text" name="kategori" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <label for="inputHarga" class="form-label mt-3" style="display: none;">Harga  Menu</label>
+                            <input type="text" name="harga" class="form-control" id="inputHarga" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputKategori" class="form-label">Kategori</label>
+                            <select type="text" name="kategori" class="form-control" id="inputKategori" aria-describedby="emailHelp">
                                 <option selected="">Pilih Kategori</option>
                                 <option value="kopi">Kopi</option>
                                 <option value="makanan ringan">Makanan Ringan</option>
                                 <option value="minuman">Minuman</option>
                         </div>
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Harga</label>
-                            <input type="text" name="harga" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Masukkan Foto</label>
+                        <div class="mb-3 ">
+                            <label for="exampleInputEmail1" style="padding-top: 10%;" class="form-label">Masukkan Foto</label>
                             <input type="file" name="foto" class="form-control">
                         </div>
                         <button type="submit" class="btn btn-primary">Tambah</button>
