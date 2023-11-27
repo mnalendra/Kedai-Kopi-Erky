@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 Route::get('/datamenu', [MenuController::class, 'index'])->name('datamenu');
@@ -32,6 +32,6 @@ Route::post('/updatedata/{id}', [MenuController::class, 'updatedata'])->name('up
 Route::get('/deletemenu/{id}', [MenuController::class, 'deletemenu'])->name('deletemenu');
 // Route::post('/updatedata/{id}', [MenuController::class, 'updatedata'])->name('updatedata');
 
-Route::get('/Home', function () {
-    return view('home');
-});
+// Route::get('/Home', function () {
+//     return view('home');
+// });
