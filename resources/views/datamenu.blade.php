@@ -11,7 +11,8 @@
         />
         <title>Data Menu</title>
     </head>
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
     <body>
         <h1 class="text-center mb-4">Data Menu</h1>
         <div class="container">
@@ -68,5 +69,36 @@
                 </table>
             </div>
         </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                // Menangkap tombol Hapus
+                var deleteButtons = document.querySelectorAll(".btn-danger");
+
+                // Menambahkan event listener ke setiap tombol Hapus
+                deleteButtons.forEach(function (button) {
+                    button.addEventListener("click", function (event) {
+                        event.preventDefault(); // Menghentikan perilaku default tombol
+
+                        // Menampilkan konfirmasi SweetAlert
+                        Swal.fire({
+                            title: "Anda yakin?",
+                            text: "Data ini akan dihapus!",
+                            icon: "warning",
+                            showCancelButton: true,
+                            confirmButtonColor: "#d33",
+                            cancelButtonColor: "#3085d6",
+                            confirmButtonText: "Ya, hapus!",
+                            cancelButtonText: "Batal",
+                        }).then((result) => {
+                            if (result.isConfirmed) {
+                                // Jika pengguna mengonfirmasi, lanjutkan dengan pengiriman formulir
+                                window.location.href =
+                                    button.getAttribute("href");
+                            }
+                        });
+                    });
+                });
+            });
+        </script>
     </body>
 </html>
