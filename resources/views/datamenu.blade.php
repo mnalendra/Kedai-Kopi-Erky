@@ -17,6 +17,7 @@
         <h1 class="text-center mb-4">Data Menu</h1>
         <div class="container">
             <a href="/tambahmenu" class="btn btn-primary">Tambah +</a>
+
             <div class="row">
                 @if ($pesan = Session::get('sukses'))
                 <div class="alert alert-primary" role="alert">{pesan}</div>
