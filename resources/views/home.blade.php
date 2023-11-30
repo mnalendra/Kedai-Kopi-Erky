@@ -51,12 +51,22 @@
   
   <main>
     <section>
-      <div class="container">
+      <div class="container" data-aos="fade-up">
         <div class="section-title">
           <h2 id="about">Kedai Kopi Erky</h2>
           <p>Berdiri sejak tahun 2020 </p>
-          
         </div>
+
+        <div class="row portfolio-container">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="img/pic1.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+
+        </div>
+          
+       
       </div>
     </section>
   </main>

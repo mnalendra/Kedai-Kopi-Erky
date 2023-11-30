@@ -34,4 +34,4 @@ Route::get('/deletemenu/{id}', [MenuController::class, 'deletemenu'])->name('del
 
 // Route::get('/Home', function () {
 //     return view('home');
-// });
+// S});
