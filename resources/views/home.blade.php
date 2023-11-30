@@ -18,22 +18,22 @@
       <a style="padding-left: 5%;" class="navbar-brand" href="#">Kedai Kopi Erky</a>
       <ul class="nav nav-pills" style="padding-right: 10%;">
         <li class="nav-item">
-          <a class="nav-link" href="#scrollspyHeading1">Home</a>
+          <a class="nav-link" href="#home" style="color: black;">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#portfolio" style="color: black;">About</a>
         </li>
         <li class="nav-item item">
-          <a class="nav-link " href="#">Menu</a>
+          <a class="nav-link " href="#" style="color: black;">Menu</a>
         </li>
         <li class="nav-item item">
-          <a class="nav-link " href="#">Contact</a>
+          <a class="nav-link " href="#" style="color: black;">Contact</a>
         </li>
       </ul>
     </nav>
   </div>
 
-  <section id="home">
+  <section id="home" class="home">
     <div class="container-fluid">
       <div class="row justify-content-center">
         <div class="col-xl-5 col-lg-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
@@ -49,12 +49,12 @@
   </section>
 
   
-  <main>
-    <section>
+ 
+    <section id="portfolio" class="portfolio">
       <div class="container" data-aos="fade-up">
         <div class="section-title">
-          <h2 id="about">Kedai Kopi Erky</h2>
-          <p>Berdiri sejak tahun 2020 </p>
+          <h2  style="margin-top: 2%; text-align: center">Kedai Kopi Erky</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas </p>
         </div>
 
         <div class="row portfolio-container">
@@ -64,12 +64,30 @@
             </div>
           </div>
 
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="img/pic2.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="img/pic3.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-web" style="float: right;">
+            <div class="portfolio-wrap">
+              <img src="img/pic3.jpg" class="img-fluid" alt="">
+            </div>
+          </div> -->
+
         </div>
           
        
       </div>
     </section>
-  </main>
+
 </body>
 
 </html>
