@@ -24,7 +24,7 @@
           <a class="nav-link" href="#portfolio" style="color: black;">About</a>
         </li>
         <li class="nav-item item">
-          <a class="nav-link " href="#" style="color: black;">Menu</a>
+          <a class="nav-link " href="#menu" style="color: black;">Menu</a>
         </li>
         <li class="nav-item item">
           <a class="nav-link " href="#" style="color: black;">Contact</a>
@@ -60,7 +60,7 @@
         <div class="row portfolio-container">
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="img/pic1.jpg" class="img-fluid" alt="">
+              <img src="img/pic2.jpg" class="img-fluid" alt="">
             </div>
           </div>
 
@@ -75,17 +75,137 @@
               <img src="img/pic3.jpg" class="img-fluid" alt="">
             </div>
           </div>
-
-          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-web" style="float: right;">
-            <div class="portfolio-wrap">
-              <img src="img/pic3.jpg" class="img-fluid" alt="">
-            </div>
-          </div> -->
-
         </div>
-          
-       
       </div>
+    </section>
+
+    <section id="menu" class="menu">
+      <div class="container" data-aos="fade-up">
+
+      <div class="section-header">
+        <h2 style="text-align: center;">Menu</h2>
+        <p style="text-align: center;">Check Our Tasty Menu</p>
+      </div>
+
+      <ul class="nav nav-tabs d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200">
+
+        <li class="nav-item">
+          <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#menu-coffee">
+            <h4>Coffee</h4>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-noncoffee">
+            <h4>Non Coffee</h4>
+          </a>
+        </li>
+
+      </ul>
+
+      <div class="tab-content" data-aos="fade-up" data-aos-delay="300">
+
+        <div class="tab-pane fade active show" id="menu-coffee">
+
+          <div class="row gy-5">
+
+            <div class="col-lg-4 menu-item">
+              <a href="img/home.png" class="glightbox"><img src="img/home.png" class="menu-img img-fluid" alt=""></a>
+              <h4>Cappuccino</h4>
+              <p class="ingredients">
+                Lorem, deren, trataro, filede, neroli
+              </p>
+              <p class="price">
+                $5.95
+              </p>
+            </div>
+
+            <div class="col-lg-4 menu-item">
+              <a href="img/home.png" class="glightbox"><img src="img/home.png" class="menu-img img-fluid" alt=""></a>
+              <h4>Espresso</h4>
+              <p class="ingredients">
+                Lorem, deren, trataro, filede, neroli
+              </p>
+              <p class="price">
+                $5.95
+              </p>
+            </div>
+
+            <div class="col-lg-4 menu-item">
+              <a href="img/home.png" class="glightbox"><img src="img/home.png" class="menu-img img-fluid" alt=""></a>
+              <h4>Americano</h4>
+              <p class="ingredients">
+                Lorem, deren, trataro, filede, neroli
+              </p>
+              <p class="price">
+                $5.95
+              </p>
+            </div>
+
+            <div class="col-lg-4 menu-item">
+              <a href="img/home.png" class="glightbox"><img src="img/home.png" class="menu-img img-fluid" alt=""></a>
+              <h4>Latte</h4>
+              <p class="ingredients">
+                Lorem, deren, trataro, filede, neroli
+              </p>
+              <p class="price">
+                $5.95
+              </p>
+            </div>
+
+            <div class="col-lg-4 menu-item">
+              <a href="img/home.png" class="glightbox"><img src="img/home.png" class="menu-img img-fluid" alt=""></a>
+              <h4>Green Tea</h4>
+              <p class="ingredients">
+                Lorem, deren, trataro, filede, neroli
+              </p>
+              <p class="price">
+                $5.95
+              </p>
+            </div>
+
+            <div class="col-lg-4 menu-item">
+              <a href="img/home.png" class="glightbox"><img src="img/home.png" class="menu-img img-fluid" alt=""></a>
+              <h4>Black Tea</h4>
+              <p class="ingredients">
+                Lorem, deren, trataro, filede, neroli
+              </p>
+              <p class="price">
+                $5.95
+              </p>
+            </div>
+
+          </div>
+
+          <div class="tab-pane fade" id="menu-noncoffee">
+            <div class="row gy-5">
+              <div class="col-lg-4 menu-item">
+                <a href="img/home.png" class="glightbox"><img src="img/home.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Black Tea</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, neroli
+                </p>
+                <p class="price">
+                  $5.95
+                </p>
+              </div>
+
+              <div class="col-lg-4 menu-item">
+                <a href="img/home.png" class="glightbox"><img src="img/home.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Green Tea</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, neroli
+                </p>
+                <p class="price">
+                  $5.95
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
     </section>
 
 </body>
