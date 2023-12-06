@@ -63,7 +63,6 @@
                     @endforeach
                 </tbody>
             </table>
-            <!-- {{$data->link()}} -->
         </div>
     </div>
     <script>
