@@ -9,7 +9,11 @@ class MenuController extends Controller
 {
     public function index()
     {
+        // if ($request->has('search')) {
+        //     $data = Menu::where('nama', 'LIKE', '%' . $request->search . '%')->paginate(5);
+        // } else {
         $data = Menu::all();
+        // }
         return view('datamenu', compact('data'));
     }
 
@@ -29,7 +33,7 @@ class MenuController extends Controller
             $data->foto = $request->file('foto')->getClientOriginalName();
             $data->save();
         }
-        return redirect()->route('datamenu')->with('sukses', 'Data berhasil ditambahkan!');
+        return redirect()->route('datamenu');
     }
 
     public function editmenu($id)
@@ -44,13 +48,13 @@ class MenuController extends Controller
         $data = Menu::find($id);
         $data->update($request->all());
 
-        return redirect()->route('datamenu')->with('sukses', 'Data berhasil diubah!');
+        return redirect()->route('datamenu');
     }
 
     public function deletemenu($id)
     {
         $data = Menu::find($id);
         $data->Delete();
-        return redirect()->route('datamenu')->with('sukses', 'Data berhasil dihapus!');
+        return redirect()->route('datamenu');
     }
 }
