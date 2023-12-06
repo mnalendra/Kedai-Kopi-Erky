@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\MenuController;
 use Illuminate\Support\Facades\Route;
 
@@ -35,3 +36,7 @@ Route::get('/deletemenu/{id}', [MenuController::class, 'deletemenu'])->name('del
 // Route::get('/Home', function () {
 //     return view('home');
 // S});
+
+
+// Login
+Route::get('/login', [LoginController::class, 'login'])->name('login');
