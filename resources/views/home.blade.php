@@ -13,6 +13,7 @@
 </head>
 
 <body>
+
   <div class="fixed-top">
     <nav id="navbar-example1" class="navbar bg-body-tertiary px-3 mb-3">
       <a style="padding-left: 5%;" class="navbar-brand" href="#">Kedai Kopi Erky</a>
@@ -27,7 +28,7 @@
           <a class="nav-link " href="#menu" style="color: black;">Menu</a>
         </li>
         <li class="nav-item item">
-          <a class="nav-link " href="#" style="color: black;">Contact</a>
+          <a class="nav-link " href="#contact" style="color: black;">Contact</a>
         </li>
       </ul>
     </nav>
@@ -79,7 +80,7 @@
       </div>
     </section>
 
-    <section id="menu" class="menu">
+    <section id="menu" class="menu" style="padding-bottom: 50px;">
       <div class="container" data-aos="fade-up">
 
       <div class="section-header">
@@ -208,8 +209,8 @@
 
     </section>
 
-    <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
+    <section id="contact" class="contact" >
+      <div class="container" data-aos="fade-up" >
 
         <div class="section-header">
           <h2>Contact</h2>
@@ -253,6 +254,19 @@
         </div>
       </div>
     </section>
+   
+
+  <footer id="footer" class="footer mt-6" style="margin-top: 50px;" >
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Kedai-Kopi-Erky</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+       
+        Designed by Kelompok 1</a>
+      </div>
+    </div>
+  </footer>
 
 </body>
 
