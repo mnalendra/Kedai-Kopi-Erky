@@ -40,3 +40,8 @@ Route::get('/deletemenu/{id}', [MenuController::class, 'deletemenu'])->name('del
 
 // Login
 Route::get('/login', [LoginController::class, 'login'])->name('login');
+Route::post('/loginuser', [LoginController::class, 'loginuser'])->name('loginuser');
+
+// Register
+Route::get('/register', [LoginController::class, 'register'])->name('register');
+Route::post('/registeruser', [LoginController::class, 'registeruser'])->name('registeruser');
