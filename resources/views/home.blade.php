@@ -51,7 +51,7 @@
 
   
  
-    <section id="portfolio" class="portfolio">
+    <section id="portfolio" class="portfolio" style="padding-bottom: 5px;">
       <div class="container" data-aos="fade-up">
         <div class="section-title">
           <h2  style="margin-top: 2%; text-align: center">Kedai Kopi Erky</h2>
@@ -178,7 +178,7 @@
 
           </div>
 
-          <div class="tab-pane fade" id="menu-noncoffee">
+          <!-- <div class="tab-pane fade" id="menu-noncoffee">
             <div class="row gy-5">
               <div class="col-lg-4 menu-item">
                 <a href="img/home.png" class="glightbox"><img src="img/home.png" class="menu-img img-fluid" alt=""></a>
@@ -202,19 +202,19 @@
                 </p>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
       </div>
 
     </section>
 
-    <section id="contact" class="contact" >
+    <section id="contact" class="contact" style="padding-top: 5px;" >
       <div class="container" data-aos="fade-up" >
 
         <div class="section-header">
-          <h2>Contact</h2>
-          <p>Need Help? <span>Contact Us</span></p>
+          <h2 style="text-align: center;">Contact</h2>
+          <p style="text-align: center;" >Need Help? <span>Contact Us</span></p>
         </div>
 
         <div class="row gy-4">
