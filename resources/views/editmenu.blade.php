@@ -8,9 +8,20 @@
     <title>Form Edit Data Menu</title>
 </head>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<style>
+   h1 {
+    margin: 0;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 64px;
+    color: #0c0c0c;
+    font-family:cursive;
+  }
+  </style>
 
-<body>
-    <h1 class="text-center mb-4">Edit Data Menu</h1>
+
+<body style="background-color: rgba(216, 185, 101, 0.9)">
+    <h1 class="text-center mb-4 text-decoration-underline">Edit Data Menu</h1>
     <div class="container">
         <div class="row">
             <div class="card">

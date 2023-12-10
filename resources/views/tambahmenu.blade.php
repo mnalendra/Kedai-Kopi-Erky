@@ -9,25 +9,131 @@
     <title>Tambah Data Menu</title>
 </head>
 <style>
-   h1 {
-    margin: 0;
-    font-size: 52px;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    max-width: 850px;
+    background: #fff;
+    border-radius: 0px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.tambahmenu {
+    width: 500px;
+}
+
+form {
+    width: 300px;
+    margin: 30px ;
+}
+
+h1 {
+  font-size: 30px;
     font-weight: 700;
-    line-height: 64px;
+    line-height: 30px;
     color: #0c0c0c;
     font-family:cursive;
+}
+h2 {
+  font-size: 15px;
+    font-weight: 700px;
+    line-height: 30px;
+    color: #0c0c0c;
+    font-family:cursive;
+    text-align: center;
+}
+
+hr {
+    border-top: 2px solid  rgba(216, 185, 101, 0.9);
+}
+
+p {
+    text-align: center;
+    margin: 10px;
+}
+
+.right img {
+    width: 400px;
+    height: 100%;
+    margin-left: 75px;
+   
+}
+
+form label {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px;
+    
+}
+
+input {
+    width: 100%;
+    margin: 2px;
+    border: none;
+    outline: none;
+    padding: 8px;
+    border-radius: 5px;
+    border: 5px solid gray;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 8px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+@media (max-width: 880px) {
+    .container {
+        width: 100%;
+        max-width: 750px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    form {
+        width: 500px;
+        margin: 20px auto;
+    }
+
+    .tambahmenu {
+        width: 500px;
+        padding: 20px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .right img {
+        width: 100%;
+        height: 100%;
+    }
   }
   </style>
 
+
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-<body style="background-color: rgba(216, 185, 101, 0.9)">
-<div class="container mt-5">
-    <h1 class="text-center mb-4 text-decoration-underline">Tambah Data Menu</h1>
-    <div class="row justify-content-center">
-      <div class="card col-md-8">
-        <div class="card-body">
+<body style="background-color: burlywood">
+<div class="container">
+<div class="tambahmenu">
           <form action="/insertdata" method="post" enctype="multipart/form-data">
+          <h1 class="text-center mb-4">Tambah Data Menu</h1>
+          <hr>
+          <h2>Add to your Happiness...</h2>
             @csrf
             <div class="mb-3">
               <label for="namaMenu" class="form-label">Nama Menu</label>
@@ -52,9 +158,10 @@
             </div>
             <button type="submit" class="btn btn-dark">Tambah</button>
           </form>
+</div>
+<div class="right">
+            <img src="img/pic1.jpg" alt="">
         </div>
-      </div>
-    </div>
   </div>
 
   <!-- Bootstrap JS and Popper.js -->
