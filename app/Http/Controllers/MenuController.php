@@ -7,13 +7,13 @@ use Illuminate\Http\Request;
 
 class MenuController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        // if ($request->has('search')) {
-        //     $data = Menu::where('nama', 'LIKE', '%' . $request->search . '%')->paginate(5);
-        // } else {
-        $data = Menu::all();
-        // }
+        if ($request->has('search')) {
+            $data = Menu::where('nama', 'LIKE', '%' . $request->search . '%')->paginate();
+        } else {
+            $data = Menu::all();
+        }
         return view('datamenu', compact('data'));
     }
 

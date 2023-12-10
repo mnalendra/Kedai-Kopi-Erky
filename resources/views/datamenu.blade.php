@@ -15,14 +15,15 @@
     <div class="container">
         <a href="/tambahmenu" class="btn btn-primary">Tambah +</a>
 
-        <!-- <div class="row g-3 align-items-center mt-2">
-            <form action="/datamenu" method="get">
-                <div class="col-auto">
+        <div class="row g-3 align-items-center mt-2">
+            <div class="col-auto">
+                <form action="/datamenu" method="get">
                     <input type="search" id="inputPassword6" name="search" class="form-control" aria-describedby="passwordHelpInline">
-                </div>
-            </form>
+                </form>
+            </div>
 
-        </div> -->
+        </div>
+
 
         <div class="row">
             <!-- @if ($pesan = Session::get('sukses'))
