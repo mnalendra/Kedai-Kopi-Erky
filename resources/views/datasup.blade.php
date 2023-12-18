@@ -13,7 +13,7 @@
 <body>
     <h1 class="text-center mb-4">Data Supplier</h1>
     <div class="container">
-        <a href="#" class="btn btn-primary">Tambah +</a>
+        <a href="/tambahsup" class="btn btn-primary">Tambah +</a>
 
         <div class="row g-3 align-items-center mt-2">
             <div class="col-auto">

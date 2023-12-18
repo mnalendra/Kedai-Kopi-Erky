@@ -48,7 +48,7 @@
                                 <label for="exampleInputEmail1" class="form-label">{{$data->foto}}</label>
                                 <input type="file" name="foto" class="form-control" />
                             </div>
-                            <button class="btn btn-primary" type="submit">Tambah</button=>
+                            <button class="btn btn-primary" type="submit">Tambah</button>
                     </form>
                 </div>
             </div>
