@@ -52,3 +52,7 @@ Route::post('/registeruser', [LoginController::class, 'registeruser'])->name('re
 // SUPPLIER
 // Data Supplier
 Route::get('/datasup', [SupplierController::class, 'index'])->name('datasup');
+
+// Untuk Tambah Data Sup
+Route::get('/tambahsup', [SupplierController::class, 'tambahsup'])->name('tambahsup');
+Route::post('/insertdata', [SupplierController::class, 'insertdata'])->name('insertdata');
