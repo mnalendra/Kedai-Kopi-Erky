@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\MenuController;
+use App\Http\Controllers\SupplierController;
+use App\Models\Supplier;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -45,3 +47,8 @@ Route::post('/loginuser', [LoginController::class, 'loginuser'])->name('loginuse
 // Register
 Route::get('/register', [LoginController::class, 'register'])->name('register');
 Route::post('/registeruser', [LoginController::class, 'registeruser'])->name('registeruser');
+
+
+// SUPPLIER
+// Data Supplier
+Route::get('/datasup', [SupplierController::class, 'index'])->name('datasup');
