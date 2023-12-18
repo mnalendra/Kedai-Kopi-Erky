@@ -22,7 +22,7 @@
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <body style="background-color: rgba(216, 185, 101, 0.9)">
-<div class="container mt-5">
+<div class="container mt-5 ">
     <h1 class="text-center mb-4 text-decoration-underline">Tambah Data Menu</h1>
     <div class="row justify-content-center">
       <div class="card col-md-8">
