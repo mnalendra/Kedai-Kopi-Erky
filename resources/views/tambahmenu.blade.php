@@ -160,7 +160,7 @@ button {
           </form>
 </div>
 <div class="right">
-            <img src="img/pic1.jpg" alt="">
+            <img src="img/pic1.jpg"alt="">
         </div>
   </div>
 
