@@ -5,6 +5,7 @@ use App\Http\Controllers\MenuController;
 use App\Http\Controllers\SupplierController;
 use App\Models\Supplier;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LihatmenuController;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,9 +36,7 @@ Route::post('/updatedata/{id}', [MenuController::class, 'updatedata'])->name('up
 Route::get('/deletemenu/{id}', [MenuController::class, 'deletemenu'])->name('deletemenu');
 // Route::post('/updatedata/{id}', [MenuController::class, 'updatedata'])->name('updatedata');
 
-// Route::get('/Home', function () {
-//     return view('home');
-// S});
+Route::get('/lihat-menu', [LihatmenuController::class, 'showMenu']);
 
 
 // Login
