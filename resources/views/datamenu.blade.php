@@ -9,6 +9,40 @@
 </head>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
+<style>
+        body {
+            background-image: url('img/datamenu.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            /* You can adjust other background properties based on your design needs */
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0); /* Adjust the opacity and color as needed */
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 50px; /* Adjust the margin as needed */
+        }
+        table {
+            background-color: rgba(255, 255, 255, 0.5); /* Adjust the opacity and color as needed */
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        th,
+        td {
+            background-color: rgba(255, 255, 255, 0.1); /* Adjust the opacity and color as needed */
+            padding: 0.75rem;
+            vertical-align: top;
+            border-top: 1px solid #dee2e6;
+        }
+ 
+    </style>
 
 <body>
     <h1 class="text-center mb-4">Data Menu</h1>
@@ -29,7 +63,7 @@
             <!-- @if ($pesan = Session::get('sukses'))
             <div class="alert alert-primary" role="alert">{pesan}</div>
             @endif -->
-            <table class="table">
+            <table class="table"style="background-color: burlywood;">
                 <thead>
                     <tr>
                         <th scope="col">No</th>
