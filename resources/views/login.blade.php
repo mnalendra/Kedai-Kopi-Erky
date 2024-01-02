@@ -30,8 +30,8 @@
               <form action="/loginuser" method="post">
                 @csrf
                 <div class="form-group first">
-                  <label for="username">Username</label>
-                  <input type="text" class="form-control" placeholder="your-email@gmail.com" id="username">
+                  <label for="email">Email</label>
+                  <input type="text" class="form-control" placeholder="your-email@gmail.com" id="email">
                 </div>
                 <div class="form-group last mb-3">
                   <label for="password">Password</label>
