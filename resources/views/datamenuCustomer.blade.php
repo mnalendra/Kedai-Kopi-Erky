@@ -50,7 +50,7 @@
 
         <div class="row g-3 align-items-center mt-2">
             <div class="col-auto">
-                <form action="/datamenu" method="get">
+                <form action="/datamenuCustomer" method="get">
                     <input type="search" id="inputPassword6" name="search" class="form-control" aria-describedby="passwordHelpInline">
                 </form>
             </div>

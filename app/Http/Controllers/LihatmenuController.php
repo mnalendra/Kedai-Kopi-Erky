@@ -10,8 +10,13 @@ class LihatmenuController extends Controller
     {
         return view('lihatmenu'); // Menampilkan view lihatmenu.blade.php
     }
-    public function datamenuCust()
+    public function datamenuCust(Request $request)
     {
-        return view('datamenuCustomer');
+        if ($request->has('search')) {
+            $data = Menu::where('nama', 'LIKE', '%' . $request->search . '%')->paginate();
+        } else {
+            $data = Menu::all();
+        }
+        return view('datamenu', compact('data'));
     }
 }

@@ -6,6 +6,7 @@ use App\Http\Controllers\SupplierController;
 use App\Models\Supplier;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LihatmenuController;
+use Database\Seeders\MenuSeeder;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,6 +24,7 @@ Route::get('/', function () {
 });
 
 Route::get('/datamenu', [MenuController::class, 'index'])->name('datamenu');
+Route::get('/datamenuCustomer', [MenuController::class, 'datamenuCust']); //menampilkan menu cust
 
 // Untuk Tambah Data Menu
 Route::get('/tambahmenu', [MenuController::class, 'tambahmenu'])->name('tambahmenu');
@@ -37,7 +39,7 @@ Route::get('/deletemenu/{id}', [MenuController::class, 'deletemenu'])->name('del
 // Route::post('/updatedata/{id}', [MenuController::class, 'updatedata'])->name('updatedata');
 
 Route::get('/lihat-menu', [LihatmenuController::class, 'showMenu']);
-Route::get('/datamenuCust', [LihatmenuController::class, 'datamenuCust']);
+
 
 
 // Login

@@ -16,6 +16,15 @@ class MenuController extends Controller
         }
         return view('datamenu', compact('data'));
     }
+    public function datamenuCust(Request $request)
+    {
+        if ($request->has('search')) {
+            $data = Menu::where('nama', 'LIKE', '%' . $request->search . '%')->paginate();
+        } else {
+            $data = Menu::all();
+        }
+        return view('datamenuCustomer', compact('data'));
+    }
 
     //Tambah Menu
     public function tambahmenu()
