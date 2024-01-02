@@ -11,7 +11,7 @@
 </head>
 <style>
         body {
-            background-image: url('img/datamenu.jpg');
+            background-image: url('img/bg_1.jpg');
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
@@ -23,47 +23,64 @@
             padding: 20px;
             border-radius: 10px;
             margin-top: 50px; /* Adjust the margin as needed */
-        }
-        table {
-            background-color: rgba(255, 255, 255, 0.5); /* Adjust the opacity and color as needed */
-            width: 100%;
-            max-width: 100%;
-            margin-bottom: 1rem;
-            margin-top: 1rem;
-            border-collapse: collapse;
-            border-spacing: 0;
+            font-family:cursive;
         }
 
-        th,
-        td {
-            background-color: rgba(255, 255, 255, 0.1); /* Adjust the opacity and color as needed */
-            padding: 0.75rem;
-            vertical-align: top;
-            border-top: 1px solid #dee2e6;
-        }
- 
+th, td {
+  border: 1px solid #dddd;
+  text-align: center;
+  padding: 8px;
+  font-family:cursive;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: burlywood; /* Ganti dengan warna yang diinginkan */
+}
+h1 {
+  font-size: 40px;
+    font-weight: 700;
+    line-height: 30px;
+    color: cursive;
+    font-family:cursive;
+    margin-top: 20px;
+}
+hr {
+  border-top: 2px solid rgba(0, 0, 0, 1); 
+  width: 50%; 
+  margin-left: 315px;
+}
+h2 {
+  font-size: 20px;
+    font-weight: 700px;
+    line-height: 30px;
+    color: #0c0c0c;
+    font-family:cursive;
+    text-align: center;
+}
     </style>
 
 <body>
     <h1 class="text-center mb-4">Data Menu</h1>
+    <hr>
+    <h2>Welcome to Kedai Kopi Erky</h2>
     <div class="container">
-        <a href="/tambahmenu" class="btn btn-primary">Tambah +</a>
+        <a href="/tambahmenu" class="btn btn-dark">Tambah +</a>
 
-        <div class="row g-3 align-items-center mt-2">
-            <div class="col-auto">
-                <form action="/datamenu" method="get">
-                    <input type="search" id="inputPassword6" name="search" class="form-control" aria-describedby="passwordHelpInline">
-                </form>
-            </div>
+        <div class="row g-3 align-items-center mt-1 justify-content-end">
+    <div class="col-auto">
+        <form action="/datamenu" method="get">
+            <input type="search" id="inputPassword6" name="search" class="form-control" aria-describedby="passwordHelpInline">
+        </form>
+    </div>
+</div>
 
-        </div>
 
-
-        <div class="row">
+        <div class="row"style="background-color: burlywood">
             <!-- @if ($pesan = Session::get('sukses'))
             <div class="alert alert-primary" role="alert">{pesan}</div>
             @endif -->
-            <table class="table"style="background-color: burlywood;">
+            <table class="table">
                 <thead>
                     <tr>
                         <th scope="col">No</th>
@@ -90,7 +107,7 @@
                             <a href="/deletemenu/ {{$row ->id}} " type="button" class="btn btn-danger">
                                 Hapus
                             </a>
-                            <a href="/editmenu/ {{$row ->id}} " class="btn btn-info">
+                            <a href="/editmenu/ {{$row ->id}} " class="btn btn-dark">
                                 Edit
                             </a>
                         </td>
