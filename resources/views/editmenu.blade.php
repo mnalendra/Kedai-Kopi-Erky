@@ -166,7 +166,6 @@ button {
 </div>
         <div class="right">
             <img src="img/pic2.jpg" alt="">
-
         </div>
 </div>
   <!-- Bootstrap JS and Popper.js -->

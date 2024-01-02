@@ -37,6 +37,7 @@ Route::get('/deletemenu/{id}', [MenuController::class, 'deletemenu'])->name('del
 // Route::post('/updatedata/{id}', [MenuController::class, 'updatedata'])->name('updatedata');
 
 Route::get('/lihat-menu', [LihatmenuController::class, 'showMenu']);
+Route::get('/datamenuCust', [LihatmenuController::class, 'datamenuCust']);
 
 
 // Login
@@ -55,3 +56,5 @@ Route::get('/datasup', [SupplierController::class, 'index'])->name('datasup');
 // Untuk Tambah Data Sup
 Route::get('/tambahsup', [SupplierController::class, 'tambahsup'])->name('tambahsup');
 Route::post('/insertdata', [SupplierController::class, 'insertdata'])->name('insertdata');
+// Delete
+Route::get('/deletesup/{id}', [SupplierController::class, 'deletesup'])->name('deletesup');

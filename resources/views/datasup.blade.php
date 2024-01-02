@@ -51,7 +51,7 @@
                         <td>{{$row ->email_supplier}}</td>
                         <td>{{$row ->created_at}}</td>
                         <td>
-                            <a href="/deletemenu/ {{$row ->id}} " type="button" class="btn btn-danger">
+                            <a href="/deletesup/ {{$row ->id}} " type="button" class="btn btn-danger">
                                 Hapus
                             </a>
                             <a href="/editmenu/ {{$row ->id}} " class="btn btn-info">

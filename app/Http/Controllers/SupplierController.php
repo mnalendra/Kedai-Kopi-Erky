@@ -34,4 +34,10 @@ class SupplierController extends Controller
         }
         return redirect()->route('datasup');
     }
+    public function deletesup($id)
+    {
+        $data = Supplier::find($id);
+        $data->Delete();
+        return redirect()->route('datasup');
+    }
 }

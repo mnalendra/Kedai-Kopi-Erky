@@ -10,5 +10,8 @@ class LihatmenuController extends Controller
     {
         return view('lihatmenu'); // Menampilkan view lihatmenu.blade.php
     }
+    public function datamenuCust()
+    {
+        return view('datamenuCustomer');
+    }
 }
-

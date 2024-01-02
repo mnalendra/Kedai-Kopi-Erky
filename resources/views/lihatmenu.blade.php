@@ -32,7 +32,7 @@
 <body style="background-image: url(img/bg_1.jpg);">
     <div class="container">
         <div class="col-xl-5 col-lg-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center btn-row">
-            <button class="btn btn-dark btn-custom"><a href="/datamenu">Customer</a></button>
+            <button class="btn btn-dark btn-custom"><a href="/datamenuCustomer">Customer</a></button>
         </div>
 
         <div class="col-xl-5 col-lg-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center btn-row">
