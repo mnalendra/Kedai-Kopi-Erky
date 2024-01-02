@@ -40,7 +40,7 @@
         <div class="col-xl-5 col-lg-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
           <h1>COFFEE WISHPERS TALES IN EVERY SIP</h1>
           <h2>"Kopi, cairan yang membangunkan, menyatu dalam aroma dan cita rasa yang memikat."</h2>
-          <div><a href="/login" type="button" class="btn btn-dark btn-lg" style="margin-top: 5%;">Buy Now</a></div>
+          <div><a href="/lihat-menu" type="button" class="btn btn-dark btn-lg" style="margin-top: 5%;">Buy Now</a></div>
         </div>
         <div class="col-xl-6 col-lg-8 order-2 order-lg-4 home-img" style="padding-left: 5%;">
           <img src="img/home.png" class="img-fluid animated" alt="">
@@ -96,11 +96,11 @@
           </a>
         </li>
 
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-noncoffee">
             <h4>Non Coffee</h4>
           </a>
-        </li>
+        </li> -->
 
       </ul>
 
