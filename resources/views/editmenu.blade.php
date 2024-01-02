@@ -157,11 +157,13 @@ button {
                             </div>
                             <button class="btn btn-dark" type="submit">Tambah</button>
                     </form>
+   
                     </div>
 </div>
-        <div class="right">
-            <img src="img/pic2.jpg" alt="">
-        </div>
+<a href="img/pic1.jpg" target="_blank">
+    <img src="img/pic1.jpg" alt="Gambar Pic1">
+</a>
+
 </div>
   <!-- Bootstrap JS and Popper.js -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
