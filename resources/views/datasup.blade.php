@@ -54,7 +54,7 @@
                             <a href="/deletesup/ {{$row ->id}} " type="button" class="btn btn-danger">
                                 Hapus
                             </a>
-                            <a href="/editmenu/ {{$row ->id}} " class="btn btn-info">
+                            <a href="/editsup/ {{$row ->id}} " class="btn btn-info">
                                 Edit
                             </a>
                         </td>
