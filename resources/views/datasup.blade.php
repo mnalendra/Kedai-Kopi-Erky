@@ -89,6 +89,12 @@
                             // Jika pengguna mengonfirmasi, lanjutkan dengan pengiriman formulir
                             window.location.href =
                                 button.getAttribute("href");
+                            Swal.fire({
+                                title: "Deleted!",
+                                text: "Your file has been deleted.",
+                                icon: "success"
+                            });
+
                         }
                     });
                 });
