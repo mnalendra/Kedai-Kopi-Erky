@@ -13,7 +13,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+    background-image: url('img/pic6.jpg');
 }
 
 .container {
@@ -104,8 +107,8 @@ button {
     }
 
     form {
-        width: 500px;
-        margin: 20px auto;
+        width: 300px;
+        margin: 30px auto;
     }
 
     .tambahsup {
@@ -126,7 +129,7 @@ button {
 
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-<body style="background-color: burlywood">
+<body>
 <div class="container">
 <div class="tambahsup">
           <form action="/insertdataSup" method="post" enctype="multipart/form-data">
@@ -154,7 +157,7 @@ button {
           </form>
 </div>
 <div class="right">
-    <img src="img/pic1.jpg" alt="">
+    <img src="img/pic5.jpg" alt="">
 </div>
 </div>
 

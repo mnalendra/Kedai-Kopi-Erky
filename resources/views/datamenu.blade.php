@@ -24,6 +24,7 @@
             border-radius: 10px;
             margin-top: 50px; /* Adjust the margin as needed */
             font-family:cursive;
+        
         }
 
 th, td {
@@ -43,12 +44,14 @@ h1 {
     line-height: 30px;
     color: cursive;
     font-family:cursive;
-    margin-top: 20px;
+    margin-top: 50px;
+  
 }
 hr {
   border-top: 2px solid rgba(0, 0, 0, 1); 
   width: 50%; 
   margin-left: 315px;
+
 }
 h2 {
   font-size: 20px;
@@ -57,6 +60,7 @@ h2 {
     color: #0c0c0c;
     font-family:cursive;
     text-align: center;
+ 
 }
     </style>
 
