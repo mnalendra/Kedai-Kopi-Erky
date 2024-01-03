@@ -16,6 +16,7 @@ class MenuController extends Controller
         }
         return view('datamenu', compact('data'));
     }
+
     public function datamenuCust(Request $request)
     {
         if ($request->has('search')) {

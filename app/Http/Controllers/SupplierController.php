@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class SupplierController extends Controller
 {
-    public function index(Request $request)
+    public function indexsup(Request $request)
     {
         if ($request->has('search')) {
             $data = Supplier::where('nama', 'LIKE', '%' . $request->search . '%')->paginate();
@@ -16,22 +16,17 @@ class SupplierController extends Controller
         }
         return view('datasup', compact('data'));
     }
-    //Tambah Menu
+    //Tambah Supplier
     public function tambahsup()
     {
         return view(('tambahsup'));
     }
 
     // Memasukkan data ke database
-    public function insertdata(Request $request)
+    public function insertdataSup(Request $request)
     {
-        // dd($request->all());
-        $data = Supplier::create($request->all());
-        if ($request->hasFile('foto')) {
-            $request->file('foto')->move('fotomenu/', $request->file('foto')->getClientOriginalName());
-            $data->foto = $request->file('foto')->getClientOriginalName();
-            $data->save();
-        }
+        dd($request->all());
+        // $data = Supplier::create($request->all());
         return redirect()->route('datasup');
     }
     public function deletesup($id)

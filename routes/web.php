@@ -53,11 +53,11 @@ Route::post('/registeruser', [LoginController::class, 'registeruser'])->name('re
 
 // SUPPLIER
 // Data Supplier
-Route::get('/datasup', [SupplierController::class, 'index'])->name('datasup');
+Route::get('/datasup', [SupplierController::class, 'indexsup'])->name('datasup');
 
 // Untuk Tambah Data Sup
 Route::get('/tambahsup', [SupplierController::class, 'tambahsup'])->name('tambahsup');
-Route::post('/insertdata', [SupplierController::class, 'insertdata'])->name('insertdata');
+Route::post('/insertdataSup', [SupplierController::class, 'insertdataSup'])->name('insertdataSup');
 // Delete
 Route::get('/deletesup/{id}', [SupplierController::class, 'deletesup'])->name('deletesup');
 // Untuk Edit Data Menu

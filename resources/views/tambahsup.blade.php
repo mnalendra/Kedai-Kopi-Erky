@@ -25,7 +25,7 @@ body {
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
 }
 
-.tambahmenu {
+.tambahsup {
     width: 500px;
 }
 
@@ -108,7 +108,7 @@ button {
         margin: 20px auto;
     }
 
-    .tambahmenu {
+    .tambahsup {
         width: 500px;
         padding: 20px;
     }
@@ -128,8 +128,8 @@ button {
 
 <body style="background-color: burlywood">
 <div class="container">
-<div class="tambahmenu">
-          <form action="/insertdata" method="post" enctype="multipart/form-data">
+<div class="tambahsup">
+          <form action="/insertdataSup" method="post" enctype="multipart/form-data">
           <h1 class="text-center mb-4">Tambah Data Supplier</h1>
           <hr>
           <h2>Menjalin kerja sama dengan berbagai pihak</h2>
