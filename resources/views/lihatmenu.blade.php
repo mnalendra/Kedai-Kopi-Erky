@@ -11,32 +11,40 @@
     <title>Lihat Menu</title>
 
     <style>
-        /* CSS kustom untuk mengatur tombol-tombol */
+        /* CSS kustom untuk mengatur tata letak */
         .btn-custom {
-            padding: 8px 16px; /* Atur padding tombol */
-            font-size: 12px; /* Atur ukuran font */
+            padding: 8px 16px;
+            font-size: 12px;
         }
-        .btn-row {
+        .buttons {
+            position: absolute;
+            top: 50%;
+            width: 20%;
+            left: 70%; /* Menempatkan tombol di sisi kiri */
+            transform: translateY(-50%);
             display: flex;
-            justify-content: center; /* Mengatur agar tombol di tengah */
-            padding-top: 40%;
-            margin-top: 10%; /* Jarak antara baris tombol */
+            flex-direction: column;
+            gap: 10px; /* Jarak antara tombol */
         }
-        .container {
-            position: relative; /* Membuat posisi relatif */
-            text-align: center; /* Memastikan tombol di tengah */
-            height: 500px; /* Sesuaikan tinggi sesuai gambar */
+        .background-image {
+            position: absolute;
+            top: 40%;
+            right: 50%; /* Menempatkan gambar di sisi kanan */
+            transform: translateY(-50%);
+            width: 80%; /* Menyesuaikan lebar gambar */
+            height: auto; /* Menyesuaikan proporsi gambar */
+            z-index: -1; /* Meletakkan di belakang tombol */
         }
     </style>
 </head>
-<body style="background-image: url(img/bg_1.jpg);">
-    <div class="container">
-        <div class="col-xl-5 col-lg-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center btn-row">
-            <button class="btn btn-dark btn-custom"><a href="/datamenuCustomer">Customer</a></button>
-        </div>
 
-        <div class="col-xl-5 col-lg-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center btn-row">
-        <button type="button" class="btn btn-outline-light btn-custom"><a href="/login">Admin</a></button>
+<body>
+    <div class="container">
+        <img class="background-image" src="img/pic2.jpg" alt="Background Image">
+
+        <div class="buttons">
+        <button type="button" class="btn btn-dark" style="padding-right: 20px"><a href="/datamenuCustomer">Customer</a></button>
+            <button type="button" class="btn btn-outline-secondary"><a href="/login">Admin</a></button>
         </div>
     </div>
 
