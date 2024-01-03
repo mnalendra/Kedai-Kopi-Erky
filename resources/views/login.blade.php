@@ -38,13 +38,13 @@
                   <input type="password" class="form-control" placeholder="Your Password" id="password">
                 </div>
                 
-                <div class="d-sm-flex mb-5 align-items-center">
+                <!-- <div class="d-sm-flex mb-5 align-items-center">
                   <label class="control control--checkbox mb-3 mb-sm-0"><span class="caption">Remember me</span>
                     <input type="checkbox" checked="checked"/>
                     <div class="control__indicator"></div>
                   </label>
                   <span class="ml-auto"><a href="#" class="forgot-pass">Forgot Password</a></span> 
-                </div>
+                </div> -->
 
                 <input type="submit" value="Log In" class="btn btn-dark">
 
