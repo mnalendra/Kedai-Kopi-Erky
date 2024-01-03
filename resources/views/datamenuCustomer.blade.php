@@ -16,39 +16,70 @@
             <div class="section-header">
                 <h2 style="text-align: center;">Menu</h2>
                 <p style="text-align: center;">Check Our Tasty Menu</p>
+            </div> 
+            <h1 class="text-center mb-4 text-light">Data Menu</h1>
+            <div class="row mb-3">
+                <div class="col-auto">
+                    <form action="/datamenuCustomer" method="get">
+                        <input type="search" id="inputPassword6" name="search" class="form-control" aria-describedby="passwordHelpInline" placeholder="Search...">
+                    </form>
+                </div>
             </div>
-            <ul class="nav nav-tabs d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200">
-                <!-- Isi dengan konten tabs -->
+
+
+            <div class="tabs" data-aos="fade-up" data-aos-delay="300">
+            <ul class="nav nav-tab d-flex justify-content" data-aos="fade-up" data-aos-delay="200">
+                <div class="row gy-5">
+                    @foreach ($data as $menu)
+                        @if ($menu->kategori === 'kopi')
+                            <div class="col-lg-4 menu-item">
+                                <a href="{{ asset('fotomenu/'.$menu->foto) }}" class="glightbox">
+                                    <img src="{{ asset('fotomenu/'.$menu->foto) }}" class="menu-img img-fluid" alt="">
+                                </a>
+                                <h4>{{ $menu->nama }}</h4>
+                                <p class="ingredients">Lorem, deren, trataro, filede, neroli</p>
+                                <p class="price">{{ $menu->harga }}</p>
+                            </div>
+                        @endif
+                    @endforeach
+                </div>
+
             </ul>
-            <div class="tab-content" data-aos="fade-up" data-aos-delay="300">
-                <!-- Isi dengan konten tab-pane -->
+            </div>
+
+            <div class="tab-pane fade" data-aos="fade-up" data-aos-delay="300">
+            <ul class="nav nav-tabs d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200">
+                     @foreach ($data as $menu)
+                        @if ($menu->kategori === 'minuman')
+                            <div class="col-lg-4 menu-item">
+                                <a href="{{ asset('fotomenu/'.$menu->foto) }}" class="glightbox">
+                                    <img src="{{ asset('fotomenu/'.$menu->foto) }}" class="menu-img img-fluid" alt="">
+                                </a>
+                                <h4>{{ $menu->nama }}</h4>
+                                <p class="ingredients">Lorem, deren, trataro, filede, neroli</p>
+                                <p class="price">{{ $menu->harga }}</p>
+                            </div>
+                        @endif
+                    @endforeach
+            </div>
+
+            <div class="tabs" data-aos="fade-up" data-aos-delay="300">
+            <ul class="nav nav-tabs d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200">
+                     @foreach ($data as $menu)
+                        @if ($menu->kategori === 'makanan ringan')
+                            <div class="col-lg-5 menu-item">
+                                <a href="{{ asset('fotomenu/'.$menu->foto) }}" class="glightbox">
+                                    <img src="{{ asset('fotomenu/'.$menu->foto) }}" class="menu-img img-fluid" alt="">
+                                </a>
+                                <h4>{{ $menu->nama }}</h4>
+                                <p class="ingredients">Lorem, deren, trataro, filede, neroli</p>
+                                <p class="price">{{ $menu->harga }}</p>
+                            </div>
+                        @endif
+                    @endforeach
             </div>
         </div>
     </section>
-    <div class="container mt-5">
-        <h1 class="text-center mb-4 text-light">Data Menu</h1>
-        <div class="row mb-3">
-            <div class="col-auto">
-                <form action="/datamenuCustomer" method="get">
-                    <input type="search" id="inputPassword6" name="search" class="form-control" aria-describedby="passwordHelpInline" placeholder="Search...">
-                </form>
-            </div>
-        </div>
-        <div class="row row-cols-1 row-cols-md-2 g-4">
-        @foreach ($data as $menu)
-        <div class="col">
-            <div class="card">
-                <img src="{{ asset('fotomenu/' . $menu->foto) }}" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">{{ $menu->nama }}</h5>
-                    <p class="card-text">Kategori: {{ $menu->kategori }}</p>
-                    <p class="card-text">Harga: {{ $menu->harga }}</p>
-                </div>
-            </div>
-        </div>
-    @endforeach
-            <!-- Isi dengan konten cards -->
-        </div>
-    </div>
+ 
 </body>
 </html>
