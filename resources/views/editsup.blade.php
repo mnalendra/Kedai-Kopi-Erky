@@ -8,7 +8,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cerulean/bootstrap.min.css">
     <title>Form Edit Data Supplier</title>
 </head>
+ <!-- Bootstrap JS and Popper.js -->
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ <!-- SweetAlert2 JS -->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 <body style="background-color: burlywood">
     <div class="container">
         <div class="editsup">
@@ -42,42 +48,38 @@
             <div class="right">
                 <img src="img/pic2.jpg" alt="">
             </div>
- <!-- Bootstrap JS and Popper.js -->
- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
- <!-- SweetAlert2 JS -->
- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-   <script>
-       document.addEventListener("DOMContentLoaded", function() {
-           // Menangkap formulir
-           var form = document.querySelector("form");
 
-           // Menambahkan event listener ke formulir
-           form.addEventListener("submit", function(event) {
-               event.preventDefault(); // Menghentikan perilaku default formulir
 
-               // Menampilkan alert
-               Swal.fire({
-                   title: "Do you want to save the changes?",
-                   showDenyButton: true,
-                   showCancelButton: true,
-                   confirmButtonText: "Save",
-                   denyButtonText: `Don't save`
-               }).then((result) => {
-                   /* Read more about isConfirmed, isDenied below */
-                   if (result.isConfirmed) {
-                       Swal.fire("Saved!", "", "success");
-                   } else if (result.isDenied) {
-                       Swal.fire("Changes are not saved", "", "info");
-                   }
-               });
-
-               // Lanjutkan dengan pengiriman formulir ke server jika diperlukan
-               form.submit();
-           });
-       });
-   </script>
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    // Menangkap formulir
+                    var form = document.querySelector("form");
+            
+                    // Menambahkan event listener ke formulir
+                    form.addEventListener("submit", function(event) {
+                        event.preventDefault(); // Menghentikan perilaku default formulir
+            
+                        // Menampilkan alert
+                        Swal.fire({
+                            title: "Do you want to save the changes?",
+                            showDenyButton: true,
+                            showCancelButton: true,
+                            confirmButtonText: "Save",
+                            denyButtonText: `Don't save`
+                        }).then((result) => {
+                            /* Read more about isConfirmed, isDenied below */
+                            if (result.isConfirmed) {
+                                // Lanjutkan dengan pengiriman formulir ke server jika diperlukan
+                                form.submit();
+                                Swal.fire("Saved!", "", "success");
+                            } else if (result.isDenied) {
+                                Swal.fire("Changes are not saved", "", "info");
+                            }
+                        });
+                    });
+                });
+            </script>
+            
 
 </body>
 </html>
