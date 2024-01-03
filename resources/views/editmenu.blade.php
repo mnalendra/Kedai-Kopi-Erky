@@ -155,7 +155,10 @@ button {
                                 <label for="exampleInputEmail1" class="form-label">{{$data->foto}}</label>
                                 <input type="file" name="foto" class="form-control" />
                             </div>
-                            <button class="btn btn-dark" type="submit">Tambah</button>
+                            <div>
+                                
+                                <button class="btn btn-dark" type="submit">Tambah</button>
+                            </div>
                             <div class="right">
             <img src="img/pic1.jpg"alt="">
         </div>

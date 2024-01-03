@@ -62,4 +62,4 @@ Route::post('/insertdataSup', [SupplierController::class, 'insertdataSup'])->nam
 Route::get('/deletesup/{id}', [SupplierController::class, 'deletesup'])->name('deletesup');
 // Untuk Edit Data Menu
 Route::get('/editsup/{id}', [SupplierController::class, 'editsup'])->name('editsup');
-Route::post('/updatedata/{id}', [SupplierController::class, 'updatedata'])->name('updatedata');
+Route::post('/updatedatasup/{id}', [SupplierController::class, 'updatedatasup'])->name('updatedatasup');
