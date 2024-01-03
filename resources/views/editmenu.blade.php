@@ -156,13 +156,14 @@ button {
                                 <input type="file" name="foto" class="form-control" />
                             </div>
                             <button class="btn btn-dark" type="submit">Tambah</button>
+                            <div class="right">
+            <img src="img/pic1.jpg"alt="">
+        </div>
                     </form>
    
                     </div>
 </div>
-<a href="img/pic1.jpg" target="_blank">
-    <img src="img/pic1.jpg" alt="Gambar Pic1">
-</a>
+
 
 </div>
   <!-- Bootstrap JS and Popper.js -->
