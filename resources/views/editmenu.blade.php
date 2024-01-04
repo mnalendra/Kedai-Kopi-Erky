@@ -50,6 +50,13 @@ h2 {
     font-family:cursive;
     text-align: center;
 }
+h4 {
+        color:white;
+        font-family:cursive;
+        text-align: center;
+        font-size: 25px;
+
+    }
 
 hr {
     border-top: 2px solid  rgba(216, 185, 101, 0.9);
@@ -60,12 +67,13 @@ p {
     margin: 10px;
 }
 
-.right img {
-    width: 400px;
-    height: 100%;
-    margin-left: 75px;
-   
-}
+.right{
+        width: 850px;
+        height: 615px;
+        margin-left: 75px;
+        background-color:burlywood;
+       
+    }
 
 form label {
     display: block;
@@ -95,34 +103,6 @@ button {
     margin-top: 20px;
     border-radius: 5px;
 }
-
-@media (max-width: 880px) {
-    .container {
-        width: 100%;
-        max-width: 750px;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    form {
-        width: 500px;
-        margin: 20px auto;
-    }
-
-    .editmenu {
-        width: 500px;
-        padding: 20px;
-    }
-
-    button {
-        width: 100%;
-    }
-
-    .right img {
-        width: 100%;
-        height: 100%;
-    }
-  }
   </style>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Bootstrap JS and Popper.js -->
@@ -133,7 +113,7 @@ button {
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
 
-<body style="background-color: burlywood">
+<body style="background-color: white">
 <div class="container">
     <div class="editmenu">
                     <form action="/updatedata/{{ $data->id }}" method="post" enctype="multipart/form-data">
@@ -166,16 +146,20 @@ button {
                                 
                                 <button class="btn btn-dark" type="submit">Tambah</button>
                             </div>
-        <div class="right">
-            <img src="img/pic1.jpg"alt="">
-        </div>
                     </form>
    
                     </div>
+                    <div class="right">
+                <br><br><br><br><br><br>
+            <h3 style="color:burlywood;">change to your Happiness..sbsjbnzjbdjbzkhdbzhd.</h3>
+            <h4> "No one can understand the truth until he drinks of coffee's frothy goodness."</h4>
+            <br><br>
+            <h4>-Sheikh Abd-al-Kabir<h4>
+            </div>
 </div>
 
 
-</div>
+
 
   <script>
     document.addEventListener("DOMContentLoaded", function() {
