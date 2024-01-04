@@ -60,10 +60,11 @@ p {
     margin: 10px;
 }
 
-.right img {
+.right{
     width: 400px;
     height: 100%;
     margin-left: 75px;
+    background-color: #2ecc71;
    
 }
 
@@ -118,9 +119,10 @@ button {
         width: 100%;
     }
 
-    .right img {
+    .right{
         width: 100%;
         height: 100%;
+        background-color: #2ecc71;
     }
   }
   </style>
@@ -159,9 +161,6 @@ button {
                         <button class="btn btn-dark" type="submit">Tambah</button>
                     </form>
                 </div>
-        <div class="right">
-            <img src="img/pic2.jpg"alt="">
-        </div>
     
 </div>
   <!-- Bootstrap JS and Popper.js -->
