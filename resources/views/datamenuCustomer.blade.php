@@ -31,14 +31,19 @@
 
 <section id="menu" class="menu" style="padding-bottom: 50px;">
     <div class="container">
+        <div class="col-auto">
+        </div>
         <div class="section-title">
             <h2 style="text-align: center; margin-top: 7%;">Menu</h2>
-            <p style="text-align: center; margin-top: 2%;">Check Our Tasty Menu</p>
+
         </div> 
         <h1 class="text-center mb-4 text-light">Data Menu</h1>
 
         <!-- Daftar menu -->
         <div class="row">
+            <form action="/datamenuCustomer" method="get" style="margin-bottom: 20px;">
+                <input type="search" id="inputPassword6" name="search" placeholder="Search" class="form-control me-2" aria-describedby="passwordHelpInline">
+            </form>
             <!-- Looping data menu dari backend -->
             @foreach ($data as $menu)
                 <!-- Setiap menu memiliki kategori -->
