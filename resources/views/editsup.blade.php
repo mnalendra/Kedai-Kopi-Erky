@@ -57,7 +57,7 @@
         text-align: center;
     }
     h4 {
-        color:white;
+        color:black;
         font-family:cursive;
         text-align: center;
         font-size: 25px;
