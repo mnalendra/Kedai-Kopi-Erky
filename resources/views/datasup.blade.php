@@ -155,7 +155,7 @@ h2 {
 <body>
 <div class="fixed-top">
     <nav id="navbar-example1" class="navbar bg-body-tertiary px-3 mb-3">
-      <a style="padding-left: 5%;" class="navbar-brand" href="#">Kedai Kopi Erky</a>
+      <a style="padding-left: 5%;" class="navbar-brand" href="/">Kedai Kopi Erky</a>
       <ul class="nav nav-pills" style="padding-right: 10%;">
         <li class="nav-item">
           <a class="nav-link" href="/" style="color: black;">Home</a>
@@ -217,7 +217,7 @@ h2 {
                             <a href="/deletesup/ {{$row ->id}} " type="button" class="btn btn-danger">
                                 Hapus
                             </a>
-                            <a href="/editsup/ {{$row ->id}} " class="btn btn-info">
+                            <a href="/editsup/ {{$row ->id}} " class="btn btn-dark">
                                 Edit
                             </a>
                         </td>
@@ -275,17 +275,6 @@ h2 {
             });
         });
     </script>
-<footer id="footer" class="footer mt-6" style="margin-top: 50px;" >
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Kedai-Kopi-Erky</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-       
-        Designed by Kelompok 1</a>
-      </div>
-    </div>
-  </footer>
 </body>
 
 </html>
