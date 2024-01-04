@@ -161,6 +161,9 @@ h2 {
           <a class="nav-link" href="/" style="color: black;">Home</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href="/datamenu" style="color: black;">Data Menu</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="/datasup" style="color: black;">Data Supplier</a>
         </li>
         <li class="nav-item item">
