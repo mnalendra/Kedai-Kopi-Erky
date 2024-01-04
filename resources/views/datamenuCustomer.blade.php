@@ -3,83 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link href="style.css" rel="stylesheet">
     <title>Combined Menu</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link href="style.css" rel="stylesheet">
     <style>
-        /* Sesuaikan style jika diperlukan */
+        .menu-item {
+            text-align: center;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
-<body >
-    <section id="menu" class="menu" style="padding-bottom: 50px;">
-        <div class="container" data-aos="fade-up">
-            <div class="section-header">
-                <h2 style="text-align: center;">Menu</h2>
-                <p style="text-align: center;">Check Our Tasty Menu</p>
-            </div> 
-            <h1 class="text-center mb-4 text-light">Data Menu</h1>
-            <div class="row mb-3">
-                <div class="col-auto">
-                    <form action="/datamenuCustomer" method="get">
-                        <input type="search" id="inputPassword6" name="search" class="form-control" aria-describedby="passwordHelpInline" placeholder="Search...">
-                    </form>
+<body>
+<div class="fixed-top">
+    <nav id="navbar-example1" class="navbar bg-body-tertiary px-3 mb-3">
+      <a style="padding-left: 5%;" class="navbar-brand" href="#">Kedai Kopi Erky</a>
+      <ul class="nav nav-pills" style="padding-right: 10%;">
+        <li class="nav-item">
+          <a class="nav-link" href="/" style="color: black;">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/lihat-menu" style="color: black;">Logout</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+
+<section id="menu" class="menu" style="padding-bottom: 50px;">
+    <div class="container">
+        <div class="section-title">
+            <h2 style="text-align: center; margin-top: 7%;">Menu</h2>
+            <p style="text-align: center; margin-top: 2%;">Check Our Tasty Menu</p>
+        </div> 
+        <h1 class="text-center mb-4 text-light">Data Menu</h1>
+
+        <!-- Daftar menu -->
+        <div class="row">
+            <!-- Looping data menu dari backend -->
+            @foreach ($data as $menu)
+                <!-- Setiap menu memiliki kategori -->
+                <div class="col-md-4" data-kategori="{{ $menu->kategori }}">
+                    <div class="menu-item">
+                        <!-- Isi dari setiap menu -->
+                        <a href="{{ asset('fotomenu/'.$menu->foto) }}" class="glightbox">
+                            <img src="{{ asset('fotomenu/'.$menu->foto) }}" class="menu-img img-fluid" alt="" style="width: 200px;">
+                        </a>
+                        <h4>{{ $menu->nama }}</h4>
+                        <p class="ingredients">{{ $menu->kategori }}</p>
+                        <p class="price" style="text-decoration: dashed; color: brown"> Rp {{ $menu->harga }}</p>
+                    </div>
                 </div>
-            </div>
-
-
-            <div class="tabs" data-aos="fade-up" data-aos-delay="300">
-            <ul class="nav nav-tab d-flex justify-content" data-aos="fade-up" data-aos-delay="200">
-                <div class="row gy-5">
-                    @foreach ($data as $menu)
-                        @if ($menu->kategori === 'kopi')
-                            <div class="col-lg-4 menu-item">
-                                <a href="{{ asset('fotomenu/'.$menu->foto) }}" class="glightbox">
-                                    <img src="{{ asset('fotomenu/'.$menu->foto) }}" class="menu-img img-fluid" alt="">
-                                </a>
-                                <h4>{{ $menu->nama }}</h4>
-                                <p class="ingredients">Lorem, deren, trataro, filede, neroli</p>
-                                <p class="price">{{ $menu->harga }}</p>
-                            </div>
-                        @endif
-                    @endforeach
-                </div>
-
-            </ul>
-            </div>
-
-            <div class="tab-pane fade" data-aos="fade-up" data-aos-delay="300">
-            <ul class="nav nav-tabs d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200">
-                     @foreach ($data as $menu)
-                        @if ($menu->kategori === 'minuman')
-                            <div class="col-lg-4 menu-item">
-                                <a href="{{ asset('fotomenu/'.$menu->foto) }}" class="glightbox">
-                                    <img src="{{ asset('fotomenu/'.$menu->foto) }}" class="menu-img img-fluid" alt="">
-                                </a>
-                                <h4>{{ $menu->nama }}</h4>
-                                <p class="ingredients">Lorem, deren, trataro, filede, neroli</p>
-                                <p class="price">{{ $menu->harga }}</p>
-                            </div>
-                        @endif
-                    @endforeach
-            </div>
-
-            <div class="tabs" data-aos="fade-up" data-aos-delay="300">
-            <ul class="nav nav-tabs d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200">
-                     @foreach ($data as $menu)
-                        @if ($menu->kategori === 'makanan ringan')
-                            <div class="col-lg-5 menu-item">
-                                <a href="{{ asset('fotomenu/'.$menu->foto) }}" class="glightbox">
-                                    <img src="{{ asset('fotomenu/'.$menu->foto) }}" class="menu-img img-fluid" alt="">
-                                </a>
-                                <h4>{{ $menu->nama }}</h4>
-                                <p class="ingredients">Lorem, deren, trataro, filede, neroli</p>
-                                <p class="price">{{ $menu->harga }}</p>
-                            </div>
-                        @endif
-                    @endforeach
-            </div>
+            @endforeach
         </div>
-    </section>
- 
+    </div>
+</section>
+
 </body>
 </html>

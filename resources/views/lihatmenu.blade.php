@@ -43,7 +43,7 @@
         <img class="background-image" src="img/pic2.jpg" alt="Background Image">
 
         <div class="buttons">
-        <button type="button" class="btn btn-dark" style="padding-right: 20px"><a href="/datamenuCustomer">Customer</a></button>
+        <button type="button" class="btn btn-dark"><a href="/datamenuCustomer">Customer</a></button>
             <button type="button" class="btn btn-outline-secondary"><a href="/login">Admin</a></button>
         </div>
     </div>

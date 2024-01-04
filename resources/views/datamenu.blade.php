@@ -182,7 +182,7 @@ h2 {
 
         <div class="row g-3 align-items-center mt-1 justify-content-end">
     <div class="col-auto">
-        <form action="/datamenu" method="get">
+        <form action="/datamenu" method="get" style="margin-bottom: 20px;">
             <input type="search" id="inputPassword6" name="search" placeholder="Search" class="form-control me-2" aria-describedby="passwordHelpInline">
             
         </form>

@@ -40,7 +40,7 @@
         <div class="col-xl-5 col-lg-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
           <h1>COFFEE WISHPERS TALES IN EVERY SIP</h1>
           <h2>"Kopi, cairan yang membangunkan, menyatu dalam aroma dan cita rasa yang memikat."</h2>
-          <div><a href="/lihat-menu" type="button" class="btn btn-dark btn-lg" style="margin-top: 5%;">Buy Now</a></div>
+          <div><a href="/lihat-menu" type="button" class="btn btn-dark btn-lg" style="margin-top: 5%;"> See More</a></div>
         </div>
         <div class="col-xl-6 col-lg-8 order-2 order-lg-4 home-img" style="padding-left: 5%;">
           <img src="img/home.png" class="img-fluid animated" alt="">
@@ -125,10 +125,10 @@
               <a href="img/home.png" class="glightbox"><img src="img/home.png" class="menu-img img-fluid" alt=""></a>
               <h4>Espresso</h4>
               <p class="ingredients">
-                Lorem, deren, trataro, filede, neroli
+                Kopi
               </p>
               <p class="price">
-                $5.95
+                Rp 45000
               </p>
             </div>
 
@@ -136,10 +136,10 @@
               <a href="img/home.png" class="glightbox"><img src="img/home.png" class="menu-img img-fluid" alt=""></a>
               <h4>Americano</h4>
               <p class="ingredients">
-                Lorem, deren, trataro, filede, neroli
+                Kopi
               </p>
               <p class="price">
-                $5.95
+                Rp 23000
               </p>
             </div>
 
@@ -147,10 +147,10 @@
               <a href="img/home.png" class="glightbox"><img src="img/home.png" class="menu-img img-fluid" alt=""></a>
               <h4>Latte</h4>
               <p class="ingredients">
-                Lorem, deren, trataro, filede, neroli
+                Kopi
               </p>
               <p class="price">
-                $5.95
+                Rp 25000
               </p>
             </div>
 
@@ -158,10 +158,10 @@
               <a href="img/home.png" class="glightbox"><img src="img/home.png" class="menu-img img-fluid" alt=""></a>
               <h4>Green Tea</h4>
               <p class="ingredients">
-                Lorem, deren, trataro, filede, neroli
+                Minuman
               </p>
               <p class="price">
-                $5.95
+                Rp 30000
               </p>
             </div>
 
@@ -169,10 +169,10 @@
               <a href="img/home.png" class="glightbox"><img src="img/home.png" class="menu-img img-fluid" alt=""></a>
               <h4>Black Tea</h4>
               <p class="ingredients">
-                Lorem, deren, trataro, filede, neroli
+                Minuman
               </p>
               <p class="price">
-                $5.95
+                Rp 30000
               </p>
             </div>
 
@@ -223,7 +223,7 @@
             <div class="info-item  d-flex flex-column justify-content-center align-items-center">
               <i class="bi bi-map"></i>
               <h3>Our Address</h3>
-              <p>A108 Adam Street,<br>New York, NY 535022</p>
+              <p>Jl. Pikitdro<br>Bandung</p>
             </div>
           </div>
 
@@ -231,7 +231,7 @@
             <div class="info-item d-flex flex-column justify-content-center align-items-center">
               <i class="bi bi-telephone"></i>
               <h3>Call Us</h3>
-              <p>+1 5589 55488 55<br>+1 6678 254445 41</p>
+              <p>0882 345 678<br>0890 123 456</p>
             </div>
           </div>
 
@@ -239,7 +239,7 @@
             <div class="info-item  d-flex flex-column justify-content-center align-items-center">
               <i class="bi bi-envelope"></i>
               <h3>Email Us</h3>
-              <p>9Lw2j@example.com<br>9Lw2j@example.com</p>
+              <p>kedaikopierky@gmail.com<br>kedaikopierky@gmail.comm</p>
             </div>
           </div>
 
@@ -247,7 +247,7 @@
             <div class="info-item d-flex flex-column justify-content-center align-items-center">
               <i class="bi bi-clock"></i>
               <h3>Open Hours</h3>
-              <p>Monday - Friday<br>9:00AM - 05:00PM</p>
+              <p>Monday - Friday<br>10:00AM - 10:00PM</p>
             </div>
           </div>
 
