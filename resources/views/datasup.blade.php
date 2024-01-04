@@ -18,6 +18,7 @@
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
+            
             /* You can adjust other background properties based on your design needs */
         }
 
@@ -29,6 +30,12 @@
             font-family:"Roboto", sans-serif;
         
         }
+  
+        #navbar-example1 {
+    background-color: burlywood;
+    color: burlywood ;
+    font-family: 'Times New Roman', Times, serif;
+   }
 
 th, td {
   border: 1px solid #dddd;
@@ -71,6 +78,8 @@ h2 {
     background-color: #1f1f24;
     padding: 50px 0;
     color: rgba(255, 255, 255, 0.7);
+ 
+    
   }
   .footer .icon {
     margin-right: 15px;
@@ -154,14 +163,33 @@ h2 {
   </style>
 
 <body>
+<nav id="navbar-example1" class="navbar bg-body-tertiary px-3 mb-3">
+      <a style="padding-left: 5%;" class="navbar-brand" href="/">Kedai Kopi Erky</a>
+      <ul class="nav nav-pills" style="padding-right: 10%;">
+        <li class="nav-item">
+          <a class="nav-link" href="/" style="color: black;">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/datamenu" style="color: black;">Data Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/datasup" style="color: black;">Data Supplier</a>
+        </li>
+        <li class="nav-item item">
+          <a class="nav-link " href="/login" style="color: black;">Logout</a>
+        </li>
+      </ul>
+    </nav>
     <h1 class="text-center mb-4">Data Supplier</h1>
+    <hr>
+    <h2>Welcome to Kedai Kopi Erky</h2>
     <div class="container">
         <a href="/tambahsup" class="btn btn-dark">Tambah +</a>
 
-        <div class="row g-3 align-items-center mt-3 justify-content-end">
+        <div class="row g-3 align-items-center mt-1 justify-content-end">
             <div class="col-auto">
-                <form action="/datasup" method="get">
-                    <input type="search" id="inputPassword6" name="search" class="form-control" aria-describedby="passwordHelpInline">
+                <form action="/datasup" method="get"style="margin-bottom: 20px;">
+                    <input type="search" id="inputPassword6" name="search"placeholder="Search" class="form-control me-2" aria-describedby="passwordHelpInline">
                 </form>
             </div>
 
@@ -180,6 +208,7 @@ h2 {
                         <th scope="col">Alamat Supplier</th>
                         <th scope="col">No Telepon</th>
                         <th scope="col">Email</th>
+                        <th scope="col">Terakhir diubah</th>
                         <th scope="col">Aksi</th>
                     </tr>
                 </thead>
@@ -206,6 +235,19 @@ h2 {
             </table>
         </div>
     </div>
+</div>
+    <footer id="footer" class="footer mt-6" style="margin-top: 50px;" >
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Kedai-Kopi-Erky</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+       
+        Designed by Kelompok 1</a>
+      </div>
+    </div>
+  </footer>
+ 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             // Menangkap tombol Hapus
