@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-nU14brUcp6StFntEOOEBvcJm4huWjB0OcIeQ3fltAfSmuZFrkAif0T+UtNGlKKQv" crossorigin="anonymous" />
     <title>Data Supplier</title>
 </head>
@@ -101,6 +103,17 @@
             });
         });
     </script>
+<footer id="footer" class="footer mt-6" style="margin-top: 50px;" >
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Kedai-Kopi-Erky</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+       
+        Designed by Kelompok 1</a>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>

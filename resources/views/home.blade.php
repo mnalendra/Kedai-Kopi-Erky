@@ -55,7 +55,7 @@
       <div class="container" data-aos="fade-up">
         <div class="section-title">
           <h2  style="margin-top: 2%; text-align: center">Kedai Kopi Erky</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas </p>
+          <p>Kedai Kopi Erky adalah tempat yang sempurna untuk merasakan keindahan kopi dan meningkatkan kenikmatan setiap tegukan. Selamat menikmati perjalanan rasa di Kedai Kopi Erky!</p>
         </div>
 
         <div class="row portfolio-container">
@@ -223,7 +223,7 @@
             <div class="info-item  d-flex flex-column justify-content-center align-items-center">
               <i class="bi bi-map"></i>
               <h3>Our Address</h3>
-              <p>A108 Adam Street,<br>New York, NY 535022</p>
+              <p>Jl. Pikitdro I No.16, Neglasari,<br>Cibeunying Kaler, Kota Bandung, Jawa Barat 40124</p>
             </div>
           </div>
 
@@ -231,7 +231,7 @@
             <div class="info-item d-flex flex-column justify-content-center align-items-center">
               <i class="bi bi-telephone"></i>
               <h3>Call Us</h3>
-              <p>+1 5589 55488 55<br>+1 6678 254445 41</p>
+              <p>+62 811-2199-500 - WhatssApp<br></p>
             </div>
           </div>
 
@@ -247,7 +247,7 @@
             <div class="info-item d-flex flex-column justify-content-center align-items-center">
               <i class="bi bi-clock"></i>
               <h3>Open Hours</h3>
-              <p>Monday - Friday<br>9:00AM - 05:00PM</p>
+              <p>Every Day<br>10:00 AM - 10:00 PM</p>
             </div>
           </div>
 
