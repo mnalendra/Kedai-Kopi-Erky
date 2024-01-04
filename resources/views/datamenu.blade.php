@@ -172,7 +172,8 @@ h2 {
           <a class="nav-link" href="/datasup" style="color: black;">Data Supplier</a>
         </li>
         <li class="nav-item item">
-          <a class="nav-link " href="/login" style="color: black;">Logout</a>
+        <a style="padding-left: 200%; color: black;" class="nav-link" href="/login">Logout</a>
+
         </li>
       </ul>
     </nav>
