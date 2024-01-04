@@ -13,10 +13,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-    background-image: url('img/pic6.jpg');
+    min-height: 100vh;
 }
 
 .container {
@@ -98,6 +95,7 @@ button {
     border-radius: 5px;
 }
 
+
 @media (max-width: 880px) {
     .container {
         width: 100%;
@@ -129,7 +127,7 @@ button {
 
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-<body>
+<body style="background-color: burlywood">
 <div class="container">
 <div class="tambahsup">
           <form action="/insertdataSup" method="post" enctype="multipart/form-data">
