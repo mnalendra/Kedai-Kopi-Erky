@@ -206,6 +206,7 @@ h2 {
                         <th scope="col">Alamat Supplier</th>
                         <th scope="col">No Telepon</th>
                         <th scope="col">Email</th>
+                        <th scope="col">Terakhir diubah</th>
                         <th scope="col">Aksi</th>
                     </tr>
                 </thead>
