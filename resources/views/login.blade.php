@@ -25,30 +25,24 @@
             <div class="form-block">
               <div class="text-center mb-5">
               <h3>Login to <strong>Kedai Kopi Erky</strong></h3>
-              <!-- <p class="mb-4">Lorem ipsum dolor sit amet elit. Sapiente sit aut eos consectetur adipisicing.</p> -->
+              @if(session('error'))
+    <div class="alert alert-danger">{{ session('error') }}</div>
+@endif
+
               </div>
-              <form action="/loginuser" method="post">
+              <form action="/loginuser" method="POST">
                 @csrf
-                <div class="form-group first">
-                  <label for="email">Email</label>
-                  <input type="text" class="form-control" placeholder="your-email@gmail.com" id="email">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                 </div>
-                <div class="form-group last mb-3">
-                  <label for="password">Password</label>
-                  <input type="password" class="form-control" placeholder="Your Password" id="password">
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" name="password" class="form-control" id="exampleInputPassword1">
                 </div>
-                
-                <!-- <div class="d-sm-flex mb-5 align-items-center">
-                  <label class="control control--checkbox mb-3 mb-sm-0"><span class="caption">Remember me</span>
-                    <input type="checkbox" checked="checked"/>
-                    <div class="control__indicator"></div>
-                  </label>
-                  <span class="ml-auto"><a href="#" class="forgot-pass">Forgot Password</a></span> 
-                </div> -->
-
-                <input type="submit" value="Log In" class="btn btn-dark">
-
-              </form>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
             </div>
           </div>
         </div>
