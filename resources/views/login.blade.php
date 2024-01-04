@@ -26,22 +26,27 @@
               <div class="text-center mb-5">
               <h3>Login to <strong>Kedai Kopi Erky</strong></h3>
               @if(session('error'))
-    <div class="alert alert-danger">{{ session('error') }}</div>
-@endif
-
+                <div class="alert alert-danger">{{ session('error') }}</div>
+              @endif
               </div>
               <form action="/loginuser" method="POST">
                 @csrf
+                @error('email')
+                        <div class="alert alert-danger">{{ $message }}</div>
+                @enderror
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Email address</label>
                     <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                     <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                 </div>
+                @error('password')
+                        <div class="alert alert-danger">{{ $message }}</div>
+                    @enderror
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Password</label>
                     <input type="password" name="password" class="form-control" id="exampleInputPassword1">
                 </div>
-                <button type="submit" class="btn btn-primary">Login</button>
+                <button type="submit" class="btn btn-dark">Login</button>
             </form>
             </div>
           </div>
