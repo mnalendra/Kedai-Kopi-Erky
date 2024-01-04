@@ -10,7 +10,7 @@ class SupplierController extends Controller
     public function indexsup(Request $request)
     {
         if ($request->has('search')) {
-            $data = Supplier::where('nama', 'LIKE', '%' . $request->search . '%')->paginate();
+            $data = Supplier::where('nama_supplier', 'LIKE', '%' . $request->search . '%')->paginate();
         } else {
             $data = Supplier::all();
         }
@@ -35,18 +35,17 @@ class SupplierController extends Controller
         // dd($data);
         return view('editsup', compact('data'));
     }
-    public function deletesup($id)
-    {
-        $data = Supplier::find($id);
-        $data->Delete();
-        return redirect()->route('datasup');
-    }
-
     public function updatedatasup(Request $request, $id)
     {
         $data = Supplier::find($id);
         $data->update($request->all());
 
+        return redirect()->route('datasup');
+    }
+    public function deletesup($id)
+    {
+        $data = Supplier::find($id);
+        $data->Delete();
         return redirect()->route('datasup');
     }
 }

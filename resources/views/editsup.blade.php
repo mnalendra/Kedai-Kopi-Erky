@@ -80,6 +80,16 @@
                 });
             </script>
             
-
+            <footer id="footer" class="footer mt-6" style="margin-top: 50px;" >
+                <div class="container">
+                  <div class="copyright">
+                    &copy; Copyright <strong><span>Kedai-Kopi-Erky</span></strong>. All Rights Reserved
+                  </div>
+                  <div class="credits">
+                   
+                    Designed by Kelompok 1</a>
+                  </div>
+                </div>
+              </footer>
 </body>
 </html>

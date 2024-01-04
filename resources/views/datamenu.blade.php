@@ -26,6 +26,11 @@
             font-family:"Roboto", sans-serif;
         
         }
+        #navbar-example1 {
+    background-color: burlywood;
+    color: burlywood ;
+    font-family: 'Times New Roman', Times, serif;
+   }
 
 th, td {
   border: 1px solid #dddd;
@@ -155,7 +160,7 @@ h2 {
 <body>
 <div class="fixed-top">
     <nav id="navbar-example1" class="navbar bg-body-tertiary px-3 mb-3">
-      <a style="padding-left: 5%;" class="navbar-brand" href="#">Kedai Kopi Erky</a>
+      <a style="padding-left: 5%;" class="navbar-brand" href="/">Kedai Kopi Erky</a>
       <ul class="nav nav-pills" style="padding-right: 10%;">
         <li class="nav-item">
           <a class="nav-link" href="/" style="color: black;">Home</a>
