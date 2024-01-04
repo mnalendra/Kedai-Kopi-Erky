@@ -138,20 +138,20 @@ button {
           <h2>Menjalin kerja sama dengan berbagai pihak</h2>
             @csrf
             <div class="mb-3">
-              <label for="namaMenu" class="form-label">Nama Supplier</label>
-              <input type="text" name="nama_supplier" class="form-control" id="namaMenu" aria-describedby="emailHelp" required>
+              <label for="nama" class="form-label">Nama Supplier</label>
+              <input type="text" name="nama_supplier" class="form-control" id="nama" aria-describedby="emailHelp" required>
             </div>
             <div class="mb-3">
-              <label for="kategoriMenu" class="form-label">Alamat Supplier</label>
-              <input type="text" name="alamat_supplier" class="form-control" id="namaMenu" aria-describedby="emailHelp" required>
+              <label for="alamat" class="form-label">Alamat Supplier</label>
+              <input type="text" name="alamat_supplier" class="form-control" id="alamat" aria-describedby="emailHelp" required>
             </div>
             <div class="mb-3">
-              <label for="hargaMenu" class="form-label">No Telepon</label>
-              <input type="text" name="notelp_supplier" class="form-control" id="hargaMenu" aria-describedby="emailHelp" required>
+              <label for="notelp" class="form-label">No Telepon</label>
+              <input type="text" name="notelp_supplier" class="form-control" id="notelp" aria-describedby="emailHelp" required>
             </div>
             <div class="mb-3">
-              <label for="fotoMenu" class="form-label">Email</label>
-              <input type="text" name="email_supplier" class="form-control" id="fotoMenu" aria-describedby="emailHelp" required>
+              <label for="email" class="form-label">Email</label>
+              <input type="text" name="email_supplier" class="form-control" id="email" aria-describedby="emailHelp" required>
             </div>
             <button type="submit" class="btn btn-dark">Tambah</button>
           </form>
