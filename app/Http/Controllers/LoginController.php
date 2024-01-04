@@ -15,10 +15,19 @@ class LoginController extends Controller
     }
     public function loginuser(Request $request)
     {
-        if (Auth::attempt($request->only('email', 'password'))) {
-            return redirect('/datamenu');
+        $request->validate([
+            'email' => 'required|email',
+            'password' => 'required',
+        ], [
+            'email.required' => 'Email tidak boleh kosong',
+            'password.required' => 'Password tidak boleh kosong',
+        ]);
+        $credentials = $request->only('email', 'password');
+        if (Auth::attempt($credentials)) {
+            return redirect()->intended('/datamenu');
+        } else {
+            return redirect('/login')->with('error', 'Email atau Password salah');
         }
-        return redirect('/datamenu')->with('error', 'Email atau Password salah');
     }
 
     public function register()
