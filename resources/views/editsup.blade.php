@@ -133,7 +133,7 @@
 <body style="background-color: burlywood">
 <div class="container">
 <div class="tambahmenu">
-        <form action="/updatedatasup/{{ $data->id }}" method="post">
+        <form action="/updatedatasup/{{ $data->id }}" method="post" enctype="multipart/form-data">
         <h1 class="text-center mb-4 ">Edit Data Supplier</h1>
         <hr> 
         <h2>change to your Happiness...</h2>

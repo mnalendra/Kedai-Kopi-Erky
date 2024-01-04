@@ -14,6 +14,7 @@
 </head>
 <style>
    body {
+            
             background-color: burlywood;
             background-size: cover;
             background-repeat: no-repeat;
