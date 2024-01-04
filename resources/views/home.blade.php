@@ -223,9 +223,6 @@
             <div class="info-item  d-flex flex-column justify-content-center align-items-center">
               <i class="bi bi-map"></i>
               <h3>Our Address</h3>
-<<<<<<< HEAD
-              <p>Jl. Pikitdro<br>Bandung</p>
-=======
               <p>Jl. Pikitdro I No.16, Neglasari,<br>Cibeunying Kaler, Kota Bandung, Jawa Barat 40124</p>
             </div>
           </div>
@@ -234,7 +231,6 @@
             <div class="info-item d-flex flex-column justify-content-center align-items-center">
               <i class="bi bi-telephone"></i>
               <h3>Call Us</h3>
-              <p>0882 345 678<br>0890 123 456</p>
               <p>+62 811-2199-500 - WhatssApp<br></p>
             </div>
           </div>
@@ -251,10 +247,7 @@
             <div class="info-item d-flex flex-column justify-content-center align-items-center">
               <i class="bi bi-clock"></i>
               <h3>Open Hours</h3>
-              <p>Monday - Friday<br>10:00AM - 10:00PM</p>
-=======
               <p>Every Day<br>10:00 AM - 10:00 PM</p>
->>>>>>> bc3a796752cc0695276e551fca28f2ed929a592b
             </div>
           </div>
 

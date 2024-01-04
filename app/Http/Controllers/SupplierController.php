@@ -25,9 +25,9 @@ class SupplierController extends Controller
     // Memasukkan data ke database
     public function insertdataSup(Request $request)
     {
-        dd($request->all());
-        // $data = Supplier::create($request->all());
+        Supplier::create($request->all());
         return redirect()->route('datasup');
+    
     }
     public function editsup($id)
     {
