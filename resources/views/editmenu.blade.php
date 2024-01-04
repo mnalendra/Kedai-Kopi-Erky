@@ -10,7 +10,7 @@
 </head>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <style>
- body {
+body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,7 +26,7 @@
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
 }
 
-.editmenu {
+.tambahmenu {
     width: 500px;
 }
 
@@ -109,7 +109,7 @@ button {
         margin: 20px auto;
     }
 
-    .editmenu {
+    .tambahmenu {
         width: 500px;
         padding: 20px;
     }
@@ -125,21 +125,15 @@ button {
   }
   </style>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <!-- Bootstrap JS and Popper.js -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- SweetAlert2 JS -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
 
 <body style="background-color: burlywood">
 <div class="container">
-    <div class="editmenu">
+    <div class="tambahmenu">
                     <form action="/updatedata/{{ $data->id }}" method="post">
-                    <h1 class="text-center mb-4 ">Edit Data Menu</h1>
-                    <hr>
-                    <h2>change to your Happiness...</h2>
+                        <h1 class="text-center mb-4 ">Edit Data Menu</h1>
+                        <hr>
+                        <h2>change to your Happiness...</h2>
                         @csrf
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Nama Menu</label>
@@ -153,59 +147,59 @@ button {
                                 <option value="makanan ringan">Makanan Ringan</option>
                                 <option value="minuman">Minuman</option>
                             </select>
-                            <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">Harga</label>
-                                <input type="text" name="harga" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{$data->harga}}">
-                            </div>
-                            <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">{{$data->foto}}</label>
-                                <input type="file" name="foto" class="form-control" />
-                            </div>
-                            <div>
-                                
-                                <button class="btn btn-dark" type="submit">Tambah</button>
-                            </div>
-                            <div class="right">
-            <img src="img/pic1.jpg"alt="">
-        </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Harga</label>
+                            <input type="text" name="harga" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{$data->harga}}">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">{{$data->foto}}</label>
+                            <input type="file" name="foto" class="form-control" />
+                        </div>
+                        <button class="btn btn-dark" type="submit">Tambah</button>
                     </form>
-   
-                    </div>
+                </div>
+        <div class="right">
+            <img src="img/pic2.jpg"alt="">
+        </div>
+    
 </div>
+  <!-- Bootstrap JS and Popper.js -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- SweetAlert2 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Menangkap formulir
+            var form = document.querySelector("form");
 
+            // Menambahkan event listener ke formulir
+            form.addEventListener("submit", function(event) {
+                event.preventDefault(); // Menghentikan perilaku default formulir
 
-</div>
+                // Menampilkan alert
+                Swal.fire({
+                    title: "Do you want to save the changes?",
+                    showDenyButton: true,
+                    showCancelButton: true,
+                    confirmButtonText: "Save",
+                    denyButtonText: `Don't save`
+                }).then((result) => {
+                    /* Read more about isConfirmed, isDenied below */
+                    if (result.isConfirmed) {
+                        Swal.fire("Saved!", "", "success");
+                    } else if (result.isDenied) {
+                        Swal.fire("Changes are not saved", "", "info");
+                    }
+                });
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        // Menangkap formulir
-        var form = document.querySelector("form");
-
-        // Menambahkan event listener ke formulir
-        form.addEventListener("submit", function(event) {
-            event.preventDefault(); // Menghentikan perilaku default formulir
-
-            // Menampilkan alert
-            Swal.fire({
-                title: "Do you want to save the changes?",
-                showDenyButton: true,
-                showCancelButton: true,
-                confirmButtonText: "Save",
-                denyButtonText: `Don't save`
-            }).then((result) => {
-                /* Read more about isConfirmed, isDenied below */
-                if (result.isConfirmed) {
-                    // Lanjutkan dengan pengiriman formulir ke server jika diperlukan
-                    form.submit();
-                    Swal.fire("Saved!", "", "success");
-                } else if (result.isDenied) {
-                    Swal.fire("Changes are not saved", "", "info");
-                }
+                // Lanjutkan dengan pengiriman formulir ke server jika diperlukan
+                form.submit();
             });
         });
-    });
-</script>
-
+    </script>
 
 </body>
 
