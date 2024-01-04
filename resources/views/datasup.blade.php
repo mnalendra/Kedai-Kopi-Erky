@@ -163,7 +163,9 @@ h2 {
   </style>
 
 <body>
-<nav id="navbar-example1" class="navbar bg-body-tertiary px-3 mb-3">
+
+<div class="fixed-top" style="margin-bottom: 10px;">
+    <nav id="navbar-example1" class="navbar bg-body-tertiary px-3 mb-3">
       <a style="padding-left: 5%;" class="navbar-brand" href="/">Kedai Kopi Erky</a>
       <ul class="nav nav-pills" style="padding-right: 10%;">
         <li class="nav-item">
@@ -176,11 +178,13 @@ h2 {
           <a class="nav-link" href="/datasup" style="color: black;">Data Supplier</a>
         </li>
         <li class="nav-item item">
-          <a style="padding-left: 200%;color:black;" class="nav-link " href="/login">Logout</a>
+        <a style="padding-left: 200%; color: black;" class="nav-link" href="/login">Logout</a>
+
         </li>
       </ul>
     </nav>
-    <h1 class="text-center mb-4">Data Supplier</h1>
+  </div>
+    <h1 class="text-center mb-4" style="margin-top: 70px;">Data Supplier</h1>
     <hr>
     <h2>Welcome to Kedai Kopi Erky</h2>
     <div class="container">

@@ -133,6 +133,8 @@ body {
     }
   }
 
+/*----------------PORTFOLIO-----------------*/
+
   .portfolio .portfolio-item {
     margin-bottom: 40px;
   }
@@ -147,13 +149,11 @@ body {
   
   .portfolio .portfolio-wrap::before {
     content: "";
-    background: burlywood;
     position: absolute;
     left: 30px;
     right: 30px;
     top: 30px;
     bottom: 30px;
-    transition: all ease-in-out 0.3s;
     z-index: 2;
     opacity: 0;
   }
@@ -221,72 +221,9 @@ body {
     opacity: 1;
     bottom: calc(50% - 50px);
   }
-  
-  /*--------------------------------------------------------------
-  # Portfolio Details
-  --------------------------------------------------------------*/
-  .portfolio-details {
-    padding-top: 70px;
-  }
-  
-  .portfolio-details .portfolio-details-slider img {
-    width: 100%;
-  }
-  
-  .portfolio-details .portfolio-details-slider .swiper-pagination {
-    margin-top: 20px;
-    position: relative;
-  }
-  
-  .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
-    width: 12px;
-    height: 12px;
-    background-color: #fff;
-    opacity: 1;
-    border: 1px solid burlywood;
-  }
-  
-  .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-    background-color: sburlywood;
-  }
-  
-  .portfolio-details .portfolio-info {
-    padding: 30px;
-    box-shadow: 0px 0 30px rgba(44, 73, 100, 0.08);
-  }
-  
-  .portfolio-details .portfolio-info h3 {
-    font-size: 22px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #eee;
-  }
-  
-  .portfolio-details .portfolio-info ul {
-    list-style: none;
-    padding: 0;
-    font-size: 15px;
-  }
-  
-  .portfolio-details .portfolio-info ul li+li {
-    margin-top: 10px;
-  }
-  
-  .portfolio-details .portfolio-description {
-    padding-top: 30px;
-  }
-  
-  .portfolio-details .portfolio-description h2 {
-    font-size: 26px;
-    font-weight: 700;
-    margin-bottom: 20px;
-  }
-  
-  .portfolio-details .portfolio-description p {
-    padding: 0;
-  }
-  
+
+/*----------------MENU-----------------*/
+
   .menu .nav-tabs {
     border: 0;
     
