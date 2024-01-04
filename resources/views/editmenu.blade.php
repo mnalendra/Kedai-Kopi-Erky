@@ -10,7 +10,7 @@
 </head>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <style>
-body {
+ body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,14 +20,14 @@ body {
 .container {
     width: 100%;
     display: flex;
-    max-width: 850px;
+    max-width: 800px;
     background: #fff;
     border-radius: 0px;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
 }
 
-.tambahmenu {
-    width: 500px;
+.editmenu {
+    width: 300px;
 }
 
 form {
@@ -60,10 +60,13 @@ p {
     margin: 10px;
 }
 
-.right img {
-    width: 400px;
-    height: 100%;
+.right{
+    width: 100%;
+    display: flex;
+    max-width: 800px;
     margin-left: 75px;
+    margin-right:0;
+    background: #000;
    
 }
 
@@ -96,40 +99,14 @@ button {
     border-radius: 5px;
 }
 
-@media (max-width: 880px) {
-    .container {
-        width: 100%;
-        max-width: 750px;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
 
-    form {
-        width: 500px;
-        margin: 20px auto;
-    }
-
-    .tambahmenu {
-        width: 500px;
-        padding: 20px;
-    }
-
-    button {
-        width: 100%;
-    }
-
-    .right img {
-        width: 100%;
-        height: 100%;
-    }
-  }
   </style>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 
 <body style="background-color: burlywood">
 <div class="container">
-    <div class="tambahmenu">
+    <div class="editmenu">
                     <form action="/updatedata/{{ $data->id }}" method="post">
                         <h1 class="text-center mb-4 ">Edit Data Menu</h1>
                         <hr>
@@ -159,8 +136,11 @@ button {
                         <button class="btn btn-dark" type="submit">Tambah</button>
                     </form>
                 </div>
+
         <div class="right">
-            <img src="img/pic2.jpg"alt="">
+            
+       
+            
         </div>
     
 </div>
