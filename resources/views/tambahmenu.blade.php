@@ -121,6 +121,20 @@ button {
         width: 100%;
         height: 100%;
     }
+    .btn-custom {
+            padding: 8px 16px;
+            
+        }
+        .buttons {
+        border: none;
+        outline: none;
+        width: 200px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 20px;
+        border-radius: 5px;
+          
+        }
   }
   </style>
 
@@ -157,6 +171,10 @@ button {
               <input type="file" name="foto" class="form-control" id="fotoMenu" required>
             </div>
             <button type="submit" class="btn btn-dark">Tambah</button>
+            <br><br>
+            <div class="buttons">
+            <a type="button" class="btn btn-dark" href="/datamenu">Kembali</a>
+        </div>
           </form>
 </div>
 <div class="right">

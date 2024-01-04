@@ -103,6 +103,20 @@ button {
     margin-top: 20px;
     border-radius: 5px;
 }
+.btn-custom {
+            padding: 8px 16px;
+            
+        }
+        .buttons {
+        border: none;
+        outline: none;
+        width: 200px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 10px;
+        border-radius: 5px;
+          
+        }
   </style>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Bootstrap JS and Popper.js -->
@@ -144,8 +158,11 @@ button {
                             </div>
                             <div>
                                 
-                                <button class="btn btn-dark" type="submit">Tambah</button>
+                                <button class="btn btn-dark" type="submit">Ubah</button>
                             </div>
+                            <div class="buttons">
+            <a type="button" class="btn btn-dark" href="/datamenu">Kembali</a>
+        </div>
                     </form>
    
                     </div>
