@@ -114,15 +114,15 @@
               <a href="img/home.png" class="glightbox"><img src="img/home.png" class="menu-img img-fluid" alt=""></a>
               <h4>Cappuccino</h4>
               <p class="ingredients">
-                Lorem, deren, trataro, filede, neroli
+                Kopi
               </p>
               <p class="price">
-                $5.95
+               Rp 20000
               </p>
             </div>
 
             <div class="col-lg-4 menu-item">
-              <a href="img/home.png" class="glightbox"><img src="img/home.png" class="menu-img img-fluid" alt=""></a>
+              <a href="img/espresso.png" class="glightbox"><img src="img/espresso.png" class="menu-img img-fluid" alt=""></a>
               <h4>Espresso</h4>
               <p class="ingredients">
                 Kopi
@@ -132,8 +132,8 @@
               </p>
             </div>
 
-            <div class="col-lg-4 menu-item">
-              <a href="img/home.png" class="glightbox"><img src="img/home.png" class="menu-img img-fluid" alt=""></a>
+            <div class="col-lg-4 menu-item pb-4" >
+              <a href="img/amr4.png" class="glightbox"><img src="img/amr4.png" class="menu-img img-fluid" alt=""></a>
               <h4>Americano</h4>
               <p class="ingredients">
                 Kopi
@@ -144,10 +144,10 @@
             </div>
 
             <div class="col-lg-4 menu-item">
-              <a href="img/home.png" class="glightbox"><img src="img/home.png" class="menu-img img-fluid" alt=""></a>
-              <h4>Latte</h4>
+              <a href="img/str.png" class="glightbox"><img src="img/str.png" class="menu-img img-fluid" alt=""></a>
+              <h4>Milkshake</h4>
               <p class="ingredients">
-                Kopi
+                Minuman
               </p>
               <p class="price">
                 Rp 25000
@@ -155,7 +155,7 @@
             </div>
 
             <div class="col-lg-4 menu-item">
-              <a href="img/home.png" class="glightbox"><img src="img/home.png" class="menu-img img-fluid" alt=""></a>
+              <a href="img/matcha.png" class="glightbox"><img src="img/matcha.png" class="menu-img img-fluid" alt=""></a>
               <h4>Green Tea</h4>
               <p class="ingredients">
                 Minuman
@@ -166,7 +166,7 @@
             </div>
 
             <div class="col-lg-4 menu-item">
-              <a href="img/home.png" class="glightbox"><img src="img/home.png" class="menu-img img-fluid" alt=""></a>
+              <a href="img/blackt.png" class="glightbox"><img src="img/blackt.png" class="menu-img img-fluid" alt=""></a>
               <h4>Black Tea</h4>
               <p class="ingredients">
                 Minuman
