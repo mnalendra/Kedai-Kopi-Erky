@@ -55,24 +55,8 @@
                 </div>
             @endforeach
         </div>
-<<<<<<< HEAD
     </div>
 </section>
 
-=======
-    </section>
-    <footer id="footer" class="footer mt-6" style="margin-top: 50px;" >
-        <div class="container">
-          <div class="copyright">
-            &copy; Copyright <strong><span>Kedai-Kopi-Erky</span></strong>. All Rights Reserved
-          </div>
-          <div class="credits">
-           
-            Designed by Kelompok 1</a>
-          </div>
-        </div>
-      </footer>
- 
->>>>>>> bc3a796752cc0695276e551fca28f2ed929a592b
 </body>
 </html>
