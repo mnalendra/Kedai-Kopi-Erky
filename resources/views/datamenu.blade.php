@@ -49,7 +49,7 @@ h1 {
     line-height: 30px;
     color: cursive;
     font-family:"Roboto", sans-serif;
-    margin-top: 70px;
+    margin-top: 100px;
   
 }
 hr {
