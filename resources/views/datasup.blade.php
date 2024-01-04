@@ -78,6 +78,8 @@ h2 {
     background-color: #1f1f24;
     padding: 50px 0;
     color: rgba(255, 255, 255, 0.7);
+ 
+    
   }
   .footer .icon {
     margin-right: 15px;
@@ -233,6 +235,7 @@ h2 {
             </table>
         </div>
     </div>
+</div>
     <footer id="footer" class="footer mt-6" style="margin-top: 50px;" >
     <div class="container">
       <div class="copyright">
