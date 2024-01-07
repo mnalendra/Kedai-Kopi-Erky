@@ -1,6 +1,6 @@
 #navbar-example1 {
-    background-color: #efcead;
-    color: #efcead ;
+    background-color: #EFD3A1;
+    color: #EFD3A1 ;
     font-family: 'Times New Roman', Times, serif;
    }
    
@@ -18,7 +18,7 @@ body {
 #home {
     width: 100%;
     height: 100vh;
-    background-color: #efcead;
+    background-color: #EFD3A1;
     background-size: cover;
   }
   
@@ -325,7 +325,7 @@ body {
   
 
   .contact .info-item {
-    background: #efcead;
+    background: #EFD3A1;
     padding:30px;
     height: 100%;
   }
@@ -630,7 +630,7 @@ h2 {
   font-size: 14px; }
 
 .form-block {
-  background: #efcead;
+  background: #EFD3A1;
   padding: 40px;
   margin-top: -300px; }
   @media (max-width: 991.98px) {
@@ -675,7 +675,7 @@ h2 {
 
 .control:hover input:not([disabled]):checked ~ .control__indicator,
 .control input:checked:focus ~ .control__indicator {
-  background: #efcead; }
+  background: #EFD3A1; }
 
 .control input:disabled ~ .control__indicator {
   background: #e6e6e6;

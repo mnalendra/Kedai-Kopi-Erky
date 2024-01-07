@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My App</title>
+    <title>Kedai Kopi Erky</title>
+    <link href="img/logo.png" rel="icon">
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
     <!-- Tambahan tag head lainnya jika diperlukan -->
 </head>

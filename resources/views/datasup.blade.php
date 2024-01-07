@@ -8,6 +8,7 @@
     <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-nU14brUcp6StFntEOOEBvcJm4huWjB0OcIeQ3fltAfSmuZFrkAif0T+UtNGlKKQv" crossorigin="anonymous" />
     <link href="style.css" rel="stylesheet">
+    <link href="img/logo.png" rel="icon">
     <title>Data Supplier</title>
 </head>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>

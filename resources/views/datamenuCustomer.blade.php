@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Combined Menu</title>
+    <title> Kedai Kopi Erky Menu</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link href="img/logo.png" rel="icon">
     <link href="style.css" rel="stylesheet">
     <style>
         .menu-item {
@@ -35,14 +36,20 @@
         </div>
         <div class="section-title">
             <h2 style="text-align: center; margin-top: 7%;">Menu</h2>
+            <p style="text-align: center;">Check Our Tasty Menu</p>
 
         </div> 
         <h1 class="text-center mb-4 text-light">Data Menu</h1>
 
         <!-- Daftar menu -->
         <div class="row">
-            <form action="/datamenuCustomer" method="get" style="margin-bottom: 20px;">
-                <input type="search" id="inputPassword6" name="search" placeholder="Search" class="form-control me-2" aria-describedby="passwordHelpInline">
+            <form action="/datamenuCustomer" method="get" style="margin-bottom: 20px; padding-left: 60%;"  class="row g-3">
+              <div class="col-auto">
+                <input type="search" id="inputPassword6" name="search" placeholder="Search" class="form-control" aria-describedby="passwordHelpInline">
+              </div>
+              <div class="col-auto">
+                <button type="submit" class="btn btn-dark mb-3">Search</button>
+              </div>
             </form>
             <!-- Looping data menu dari backend -->
             @foreach ($data as $menu)
