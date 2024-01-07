@@ -15,7 +15,7 @@
 <style>
    body {
             
-            background-color: burlywood;
+            background-color: #efcead;
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
@@ -33,8 +33,8 @@
         }
   
         #navbar-example1 {
-    background-color: burlywood;
-    color: burlywood ;
+    background-color: #efcead;
+    color: #efcead ;
     font-family: 'Times New Roman', Times, serif;
    }
 
@@ -47,7 +47,7 @@ th, td {
 table {
   width: 100%;
   border-collapse: collapse;
-  background-color: burlywood; /* Ganti dengan warna yang diinginkan */
+  background-color: #efcead; /* Ganti dengan warna yang diinginkan */
 }
 h1 {
   font-size: 40px;
@@ -200,7 +200,7 @@ h2 {
 
         </div>
 
-    <div style="color: burlywood;">
+    <div style="color: #efcead;">
         <div class="row" >
             <!-- @if ($pesan = Session::get('sukses'))
             <div class="alert alert-primary" role="alert">{pesan}</div>

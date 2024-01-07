@@ -141,7 +141,7 @@ button {
 
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-<body style="background-color: burlywood">
+<body style="background-color: #efcead">
 <div class="container">
 <div class="tambahmenu">
           <form action="/insertdata" method="post" enctype="multipart/form-data">
@@ -173,7 +173,7 @@ button {
             <button type="submit" class="btn btn-dark">Tambah</button>
             <br><br>
             <div class="buttons">
-            <a type="button" class="btn btn-dark" href="/datamenu">Kembali</a>
+            <a type="button" class="btn btn-link " style="padding-left: 40%;" href="/datamenu">Kembali</a>
         </div>
           </form>
 </div>

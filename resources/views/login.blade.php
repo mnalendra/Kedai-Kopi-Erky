@@ -52,7 +52,7 @@
                 </div>
                 <button type="submit" class="btn btn-dark mt-3">Login</button>
             </form>
-             <p class="mt-3" style="color: brown; text-align: center">Don't have an account? <a href="/register">Register here</a></p>
+             <p class="mt-3" style="color: #8e5431; text-align: center">Don't have an account? <a href="/register">Register here</a></p>
             </div>
           </div>
         </div>

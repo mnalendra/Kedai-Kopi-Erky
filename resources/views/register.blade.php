@@ -39,9 +39,9 @@
                     <label for="password" class="form-label">Password</label>
                     <input type="password" name="password" class="form-control" id="password" required>
                 </div>
-                <div class="form-group first" style="margin-top: 7px">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1" >
-                    <label class="form-check-label" for="exampleCheck1" >Check me out</label>
+                <div class="form-check d-flex align-items-center">
+                    <input class="form-check-input ms-2" type="checkbox" id="showPassword" onchange="togglePassword()">
+                    <label class="form-check-label" for="showPassword">Show Password</label>
                 </div>
 
                 <input type="submit" value="Sign In" class="btn btn-dark" style="margin-top: 7px">
@@ -58,7 +58,16 @@
 
 
     </section>
- 
+    <script>
+        function togglePassword() {
+            const passwordField = document.getElementById('password');
+            if (passwordField.type === 'password') {
+                passwordField.type = 'text';
+            } else {
+                passwordField.type = 'password';
+            }
+        }
+    </script>
 </body>
 
 </html>

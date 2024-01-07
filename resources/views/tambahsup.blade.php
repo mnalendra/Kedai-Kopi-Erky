@@ -141,7 +141,7 @@ button {
 
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-<body style="background-color: burlywood">
+<body style="background-color: #efcead">
 <div class="container">
 <div class="tambahsup">
           <form action="/insertdataSup" method="post" enctype="multipart/form-data">
@@ -168,7 +168,7 @@ button {
             <button type="submit" class="btn btn-dark">Tambah</button>
             <br><br>
             <div class="buttons">
-            <a type="button" class="btn btn-dark" href="/datasup">Kembali</a>
+            <a type="button" class="btn btn-link " style="padding-left: 40%;" href="/datasup">Kembali</a>
         </div>
           </form>
 </div>
