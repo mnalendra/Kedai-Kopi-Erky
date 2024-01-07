@@ -42,7 +42,7 @@ th, td {
 table {
   width: 100%;
   border-collapse: collapse;
-  background-color: #efcead; /* Ganti dengan warna yang diinginkan */
+  background-color: #EFD3A1 /* Ganti dengan warna yang diinginkan */
 }
 h1 {
   font-size: 40px;
