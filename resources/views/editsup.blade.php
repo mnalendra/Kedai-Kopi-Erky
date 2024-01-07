@@ -78,7 +78,7 @@
         width: 850px;
         height: 615px;
         margin-left: 75px;
-        background-color: #efcead;
+        background-color: #EFD3A1;
        
     }
     
@@ -162,7 +162,7 @@
 </div>
             <div class="right">
                 <br><br><br><br><br><br>
-            <h3 style="color:#efcead;">change to your Happiness..sbsjbnzjbdjbzkhdbzhd.</h3>
+            <h3 style="color:#EFD3A1;">change to your Happiness..sbsjbnzjbdjbzkhdbzhd.</h3>
             <h4>"I don't drink coffee to wake up. I wake up to drink coffee."</h4>
             <br><br>
             <h4>-Nalendiva<h4>

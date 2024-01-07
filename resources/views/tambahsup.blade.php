@@ -142,7 +142,7 @@ button {
 
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-<body style="background-color: #efcead">
+<body style="background-color: #EFD3A1">
 <div class="container">
 <div class="tambahsup">
           <form action="/insertdataSup" method="post" enctype="multipart/form-data">

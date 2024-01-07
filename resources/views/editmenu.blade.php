@@ -72,7 +72,7 @@ p {
         width: 850px;
         height: 615px;
         margin-left: 75px;
-        background-color: #efcead;
+        background-color: #EFD3A1;
        
     }
 
@@ -169,7 +169,7 @@ button {
                     </div>
                     <div class="right">
                 <br><br><br><br><br><br>
-            <h3 style="color: #efcead;">change to your Happiness..sbsjbnzjbdjbzkhdbzhd.</h3>
+            <h3 style="color: #EFD3A1;">change to your Happiness..sbsjbnzjbdjbzkhdbzhd.</h3>
             <h4> "No one can understand the truth until he drinks of coffee's frothy goodness."</h4>
             <br><br>
             <h4>-Sheikh Abd-al-Kabir<h4>
